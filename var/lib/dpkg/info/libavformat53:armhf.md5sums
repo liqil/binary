@@ -1,0 +1,5 @@
+fb39e6c0b6adf001e11c185d953bfc61  usr/lib/arm-linux-gnueabihf/libavformat.so.53.21.0
+345a9abca121686623dd7a37eaf3873a  usr/lib/arm-linux-gnueabihf/neon/vfp/libavformat.so.53.21.0
+e51de741ce5932946736d2b8ef235b80  usr/share/doc/libavformat53/copyright
+fad5bc1f202b35a5822af28da99b1e4d  usr/share/doc/libavformat53/formats-armhf.txt.gz
+b3b8104f294b3b4d56b1ae26b9c113c2  usr/share/lintian/overrides/libavformat53

@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/lxpanel
+/usr/lib/arm-linux-gnueabihf/lxpanel/plugins
+/usr/lib/arm-linux-gnueabihf/lxpanel/plugins/indicator.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/lxpanel-indicator-applet-plugin
+/usr/share/doc/lxpanel-indicator-applet-plugin/copyright
+/usr/share/doc/lxpanel-indicator-applet-plugin/changelog.Debian.gz

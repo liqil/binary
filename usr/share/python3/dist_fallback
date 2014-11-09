@@ -1,0 +1,5 @@
+setuptools python3-pkg-resources
+PyYAML python3-yaml
+py_postgresql python3-postgresql
+pydns python3-dns
+python3_libgearman python3-gearman.libgearman

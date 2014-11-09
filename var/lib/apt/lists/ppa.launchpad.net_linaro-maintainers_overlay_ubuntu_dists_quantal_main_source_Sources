@@ -1,0 +1,1697 @@
+Package: base-files
+Binary: base-files, lsb-release-udeb
+Version: 6.5ubuntu12+linaro13.04
+Section: admin
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Architecture: any all
+Standards-Version: 3.9.1
+Format: 3.0 (native)
+Directory: pool/main/b/base-files
+Files:
+ 20c08497c2d3deb6da68dc647cfdb07a 86233 base-files_6.5ubuntu12+linaro13.04.tar.gz
+ ce92cb878bc39db7d64aa70082a97342 1083 base-files_6.5ubuntu12+linaro13.04.dsc
+Checksums-Sha1: 85458d7470b7df252a0bd853dd75dc14153e97c6 86233 base-files_6.5ubuntu12+linaro13.04.tar.gz
+Package-List: base-files deb admin required
+ lsb-release-udeb deb debian-installer extra
+Checksums-Sha256: c2f596501360116ec7e7aaff8431e014b3e9444abebcd1d5862c9843fb4f1df5 86233 base-files_6.5ubuntu12+linaro13.04.tar.gz
+Original-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+
+Package: alsa-lib
+Binary: libasound2, libasound2-python, libasound2-dev, libasound2-dbg, lib64asound2, lib64asound2-dev, lib32asound2, lib32asound2-dev, libasound2-udeb, libasound2-doc
+Version: 1.0.25-1ubuntu11~1linaro3
+Section: libs
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: autotools-dev, debhelper (>= 8.1.3), dh-autoreconf, doxygen, gcc-multilib [amd64 i386 powerpc ppc64 s390 sparc], lib32gcc1 [amd64 ppc64], lib64gcc1 [i386 powerpc sparc s390], libc6-dev-amd64 [i386], libc6-dev-i386 [amd64], libc6-dev-powerpc [ppc64], libc6-dev-ppc64 [powerpc], libc6-dev-s390x [s390], libc6-dev-sparc64 [sparc], python-dev
+Architecture: linux-any i386 powerpc s390 sparc amd64 all
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/a/alsa-lib
+Files:
+ 06fe5819020c6684b991dcffc5471304 838403 alsa-lib_1.0.25.orig.tar.bz2
+ c33dc91c830301726fe59db4e39b4e96 55005 alsa-lib_1.0.25-1ubuntu11~1linaro3.debian.tar.bz2
+ 5610cabf03cd4d1151c45e97fa3b4451 2696 alsa-lib_1.0.25-1ubuntu11~1linaro3.dsc
+Uploaders: Jordi Mallach <jordi@debian.org>, Elimar Riesebieter <riesebie@lxtec.de>
+Debian-Vcs-Browser: http://anonscm.debian.org/viewvc/pkg-alsa/trunk/alsa-lib/
+Checksums-Sha1: 868ec437e033291435b2d3e0978317aae0636212 838403 alsa-lib_1.0.25.orig.tar.bz2
+ 97a96f68dc3f1b4d555aacd970b1ea0d06c777fb 55005 alsa-lib_1.0.25-1ubuntu11~1linaro3.debian.tar.bz2
+Package-List: lib32asound2 deb libs optional
+ lib32asound2-dev deb libdevel optional
+ lib64asound2 deb libs optional
+ lib64asound2-dev deb libdevel optional
+ libasound2 deb libs optional
+ libasound2-dbg deb debug extra
+ libasound2-dev deb libdevel optional
+ libasound2-doc deb doc optional
+ libasound2-python deb libs optional
+ libasound2-udeb udeb debian-installer optional
+Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-audio-dev/alsa-lib/ubuntu.precise
+Homepage: http://www.alsa-project.org/
+Debian-Vcs-Svn: svn://anonscm.debian.org/pkg-alsa/trunk/alsa-lib
+Checksums-Sha256: 5a1a805cf04106316d549ec650116ce6711a162e107ba8b3c551866680e286e6 838403 alsa-lib_1.0.25.orig.tar.bz2
+ 5973ac005f2d23c50139c6a8e4a809a9064fa1c9f71d139a8c03ccdf10e900fe 55005 alsa-lib_1.0.25-1ubuntu11~1linaro3.debian.tar.bz2
+Original-Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+
+Package: openssl
+Binary: openssl, libssl1.0.0, libcrypto1.0.0-udeb, libssl1.0.0-udeb, libssl-dev, libssl-doc, libssl1.0.0-dbg
+Version: 1.0.1c-3ubuntu2.5~linaro1
+Section: utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.1.3), zlib1g-dev, m4, bc, dpkg-dev (>= 1.15.7)
+Architecture: any all
+Standards-Version: 3.8.0
+Format: 3.0 (quilt)
+Directory: pool/main/o/openssl
+Files:
+ ae412727c8c15b67880aef7bd2999b2e 4457113 openssl_1.0.1c.orig.tar.gz
+ 5b210c29657dc8be136d3ce412138e85 134441 openssl_1.0.1c-3ubuntu2.5~linaro1.debian.tar.gz
+ f3a0d3495f8d9f0c0587d57a6422cf52 1909 openssl_1.0.1c-3ubuntu2.5~linaro1.dsc
+Uploaders: Christoph Martin <christoph.martin@uni-mainz.de>, Kurt Roeckx <kurt@roeckx.be>
+Debian-Vcs-Browser: http://svn.debian.org/wsvn/pkg-openssl/openssl
+Checksums-Sha1: 91b684de947cb021ac61b8c51027cc4b63d894ce 4457113 openssl_1.0.1c.orig.tar.gz
+ 9ec413250514eda82866bac6cfeea1985a532407 134441 openssl_1.0.1c-3ubuntu2.5~linaro1.debian.tar.gz
+Package-List: libcrypto1.0.0-udeb udeb debian-installer optional
+ libssl-dev deb libdevel optional
+ libssl-doc deb doc optional
+ libssl1.0.0 deb libs important
+ libssl1.0.0-dbg deb debug extra
+ libssl1.0.0-udeb udeb debian-installer optional
+ openssl deb utils optional
+Debian-Vcs-Svn: svn://svn.debian.org/pkg-openssl/openssl/
+Checksums-Sha256: 2a9eb3cd4e8b114eb9179c0d3884d61658e7d8e8bf4984798a5f5bd48e325ebe 4457113 openssl_1.0.1c.orig.tar.gz
+ 0cffa8453afbf8b8a98e23db1091a40ddf56a4e0a6f140931b42313fec618c87 134441 openssl_1.0.1c-3ubuntu2.5~linaro1.debian.tar.gz
+Original-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+
+Package: mime-support
+Binary: mime-support
+Version: 3.52-1ubuntu2
+Section: net
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper
+Architecture: all
+Standards-Version: 3.1.1.1
+Format: 1.0
+Directory: pool/main/m/mime-support
+Files:
+ acc0a19780430b17d46bf0fc8a9ad9f0 31626 mime-support_3.52-1ubuntu2.tar.gz
+ 92c7fb673b703d2fcc787690c4ceb516 986 mime-support_3.52-1ubuntu2.dsc
+Checksums-Sha1: 564da1d1fe0dcfa0af6f5664a3dc91f5ec13265a 31626 mime-support_3.52-1ubuntu2.tar.gz
+Package-List: mime-support deb net standard
+Checksums-Sha256: 1693a02e100e6e3563ff57bb344f3f21e5b803852f9c517f92201a504ec836d4 31626 mime-support_3.52-1ubuntu2.tar.gz
+Original-Maintainer: Brian White <bcwhite@pobox.com>
+
+Package: stress
+Binary: stress
+Version: 1.0.1-1build1linaro1
+Section: devel
+Maintainer: Amos Waterland <apw@rossby.metr.ou.edu>
+Build-Depends: debhelper (>> 7.3.11)
+Architecture: any
+Standards-Version: 3.8.2.0
+Format: 1.0
+Directory: pool/main/s/stress
+Files:
+ 9e8a4a4f687567f40de5bb34c86e1bfe 203343 stress_1.0.1.orig.tar.gz
+ 04b1d4ad5167aaf389a7d3521b913a97 2121 stress_1.0.1-1build1linaro1.diff.gz
+ ea0b47a5508ecef7f821e841ed02ba95 1676 stress_1.0.1-1build1linaro1.dsc
+Checksums-Sha1: 0cfdbb4cf30d14527b05eeaab3775777d48d0b9c 203343 stress_1.0.1.orig.tar.gz
+ 1904c6cfc9f9c67b8881c24ffdae362748a08005 2121 stress_1.0.1-1build1linaro1.diff.gz
+Package-List: stress deb devel extra
+Checksums-Sha256: 813a9c78d0a7c27e257ab4523f1b0013e32b0eceabc19154d7d26118e9b73bed 203343 stress_1.0.1.orig.tar.gz
+ 42371b088d0c96b4571c302e274cc93a52f83b84c8d1b5010899323af3130769 2121 stress_1.0.1-1build1linaro1.diff.gz
+
+Package: acpica-unix
+Binary: acpica-tools, iasl
+Version: 20130214-0.2
+Section: devel
+Maintainer: Mattia Dongili <malattia@debian.org>
+Build-Depends: bison, debhelper (>= 8), flex
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/a/acpica-unix
+Files:
+ a19cabb53f1f94389ac9d55955ffd2cd 3165240 acpica-unix_20130214.orig.tar.gz
+ 3a969cb266ea3e9e6cbd0b371b180725 26619 acpica-unix_20130214-0.2.debian.tar.gz
+ f55d96dc849bb5a14ca01752fe10f2e1 1409 acpica-unix_20130214-0.2.dsc
+Checksums-Sha1: ad1c4c144432485aa004d15e24f6847553f98705 3165240 acpica-unix_20130214.orig.tar.gz
+ 97bc041b9add0f22c1346e564d1ef537bea3f3f4 26619 acpica-unix_20130214-0.2.debian.tar.gz
+Package-List: acpica-tools deb devel optional
+ iasl deb oldlibs optional
+Vcs-Git: git://git.kamineko.org/acpica-unix.git
+Vcs-Browser: http://git.kamineko.org/cgi-bin/gitweb.cgi?p=acpica-unix.git
+Homepage: http://www.acpica.org
+Checksums-Sha256: 06953ecc31253b0752949eb174bc835194c97013f0e0209ccca1ddb359ea4461 3165240 acpica-unix_20130214.orig.tar.gz
+ e26b8601dd49b375bf6645ccd3222587a754c143aa86454f6994822eede876f4 26619 acpica-unix_20130214-0.2.debian.tar.gz
+
+Package: numactl
+Binary: numactl, libnuma1, libnuma-dev, libnuma-dbg
+Version: 2.0.8-1+linaro1
+Section: admin
+Maintainer: Ian Wienand <ianw@debian.org>
+Build-Depends: cdbs, debhelper, dh-buildinfo, quilt
+Architecture: amd64 armhf i386 ia64 mips mipsel powerpc
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/n/numactl
+Files:
+ 157def35edcc0ab94144398000b01d18 339373 numactl_2.0.8.orig.tar.gz
+ 015e1f3d1a6a0dd3199b286f239e954d 6311 numactl_2.0.8-1+linaro1.debian.tar.gz
+ 3c417650e74eec7c96f1dc4959367d9d 1378 numactl_2.0.8-1+linaro1.dsc
+Uploaders: Al Stone <ahs3@debian.org>
+Checksums-Sha1: f7bf06caea29669992fd3540a4c864a32615b5a1 339373 numactl_2.0.8.orig.tar.gz
+ 4d8a178c0e67ae8b9b403eb77875e5539ab257bc 6311 numactl_2.0.8-1+linaro1.debian.tar.gz
+Package-List: libnuma-dbg deb debug extra
+ libnuma-dev deb libdevel extra
+ libnuma1 deb libs optional
+ numactl deb admin optional
+Checksums-Sha256: 2f5bb6d1d5556235ec3b1ed40094d5bc2502e5bacc213d324088d63fa531c9ea 339373 numactl_2.0.8.orig.tar.gz
+ 101e321f4d37fdad7d0f0b1e82cbdf56e9b7a5d62454a0e44541777484b6e0b1 6311 numactl_2.0.8-1+linaro1.debian.tar.gz
+
+Package: pulseaudio
+Binary: pulseaudio, pulseaudio-dbg, pulseaudio-utils, pulseaudio-utils-dbg, pulseaudio-esound-compat, pulseaudio-esound-compat-dbg, pulseaudio-module-zeroconf, pulseaudio-module-zeroconf-dbg, pulseaudio-module-jack, pulseaudio-module-jack-dbg, pulseaudio-module-lirc, pulseaudio-module-lirc-dbg, pulseaudio-module-gconf, pulseaudio-module-gconf-dbg, pulseaudio-module-raop, pulseaudio-module-raop-dbg, pulseaudio-module-bluetooth, pulseaudio-module-bluetooth-dbg, pulseaudio-module-x11, pulseaudio-module-x11-dbg, libpulse0, libpulse0-dbg, libpulse-mainloop-glib0, libpulse-mainloop-glib0-dbg, libpulse-dev, libpulsedsp, libpulsedsp-dbg
+Version: 1:2.0-0ubuntu1~linaro2
+Section: sound
+Maintainer: Ubuntu Core Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 8.1.3), cdbs (>= 0.4.93), quilt, m4, libltdl-dev, libsamplerate0-dev, libsndfile1-dev (>= 1.0.20), libglib2.0-dev, libasound2-dev (>= 1.0.19) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libavahi-client-dev, libjack-dev, libwrap0-dev, libasyncns-dev, liblircclient-dev, libgconf2-dev, libspeexdsp-dev (>= 1.2~rc1), liborc-0.4-dev, libbluetooth-dev (>= 3.0) [!kfreebsd-i386 !kfreebsd-amd64 !hurd-i386], libtdb-dev, intltool, libgtk2.0-dev, libxtst-dev, libssl-dev, libudev-dev (>= 143), libice-dev, libxi-dev, x11proto-core-dev, libxcb1-dev (>= 1.6), libx11-xcb-dev, automake, autoconf, libtool, libjson0-dev, dh-autoreconf, dh-translations
+Architecture: any
+Standards-Version: 3.8.1
+Format: 1.0
+Directory: pool/main/p/pulseaudio
+Files:
+ c98f07420fcbc46707f389dfda804ac7 2520443 pulseaudio_2.0-0ubuntu1~linaro2.tar.gz
+ c61ef012b0ff9b9c697a64ced0200d80 3736 pulseaudio_2.0-0ubuntu1~linaro2.dsc
+Uploaders: CJ van den Berg <cj@vdbonline.com>, Sjoerd Simons <sjoerd@debian.org>
+Debian-Vcs-Browser: http://git.debian.org/?p=pkg-pulseaudio/pulseaudio.git
+Checksums-Sha1: d893bb0bc5e500338f89d9cade486d4cbbefbc1f 2520443 pulseaudio_2.0-0ubuntu1~linaro2.tar.gz
+Package-List: libpulse-dev deb libdevel optional
+ libpulse-mainloop-glib0 deb sound optional
+ libpulse-mainloop-glib0-dbg deb debug extra
+ libpulse0 deb libs optional
+ libpulse0-dbg deb debug extra
+ libpulsedsp deb sound optional
+ libpulsedsp-dbg deb debug extra
+ pulseaudio deb sound optional
+ pulseaudio-dbg deb debug extra
+ pulseaudio-esound-compat deb sound optional
+ pulseaudio-esound-compat-dbg deb debug extra
+ pulseaudio-module-bluetooth deb sound extra
+ pulseaudio-module-bluetooth-dbg deb debug extra
+ pulseaudio-module-gconf deb sound optional
+ pulseaudio-module-gconf-dbg deb debug extra
+ pulseaudio-module-jack deb sound optional
+ pulseaudio-module-jack-dbg deb debug extra
+ pulseaudio-module-lirc deb sound optional
+ pulseaudio-module-lirc-dbg deb debug extra
+ pulseaudio-module-raop deb sound optional
+ pulseaudio-module-raop-dbg deb debug extra
+ pulseaudio-module-x11 deb sound optional
+ pulseaudio-module-x11-dbg deb debug extra
+ pulseaudio-module-zeroconf deb sound optional
+ pulseaudio-module-zeroconf-dbg deb debug extra
+ pulseaudio-utils deb sound optional
+ pulseaudio-utils-dbg deb debug extra
+Vcs-Bzr: http://bazaar.launchpad.net/~ubuntu-audio-dev/pulseaudio/ubuntu.quantal
+Homepage: http://www.pulseaudio.org
+Debian-Vcs-Git: git://git.debian.org/git/pkg-pulseaudio/pulseaudio.git
+Checksums-Sha256: a660328903d4418bb6a2b19b0061a768b339449bea2e567adb8d30b88bca3797 2520443 pulseaudio_2.0-0ubuntu1~linaro2.tar.gz
+Original-Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+
+Package: flash-kernel
+Binary: flash-kernel, flash-kernel-installer
+Version: 3.0~rc.4ubuntu27.2~linaro1
+Section: utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.3.10), devio
+Architecture: arm armel armeb armhf
+Standards-Version: 3.9.2
+Format: 1.0
+Directory: pool/main/f/flash-kernel
+Files:
+ 6850f21fda439fa983f00211cd3f302c 58834 flash-kernel_3.0~rc.4ubuntu27.2~linaro1.tar.gz
+ 4fcb624bccc98face36a54f30e791024 1401 flash-kernel_3.0~rc.4ubuntu27.2~linaro1.dsc
+Uploaders: Loïc Minier <lool@debian.org>, Hector Oron <zumbi@debian.org>, Wouter Verhelst <wouter@debian.org>
+Package-List: flash-kernel deb utils optional
+ flash-kernel-installer udeb debian-installer standard
+Vcs-Git: git://git.debian.org/d-i/flash-kernel.git
+Vcs-Browser: http://git.debian.org/?p=d-i/flash-kernel.git
+Original-Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Checksums-Sha1: 072faa7a1af339f73a15eee7c892f14fa36dd65d 58834 flash-kernel_3.0~rc.4ubuntu27.2~linaro1.tar.gz
+Checksums-Sha256: 9fc2fd6dced63c7f5384f1c9c037e122765958d8a3e6548394884b6efd941211 58834 flash-kernel_3.0~rc.4ubuntu27.2~linaro1.tar.gz
+
+Package: lmbench
+Binary: lmbench, lmbench-doc
+Version: 3.0-a9-1
+Section: admin
+Maintainer: Al Stone <ahs3@debian.org>
+Build-Depends: docbook-to-man, debhelper (>> 3.0.0), dpatch
+Architecture: any
+Standards-Version: 3.8.0
+Format: 1.0
+Directory: pool/main/l/lmbench
+Files:
+ ff8978a900999b60b336e56e368bef59 417326 lmbench_3.0-a9.orig.tar.gz
+ 2c63c50a0b6d3c3736f5f5c40ea9ffbf 14264 lmbench_3.0-a9-1.diff.gz
+ eee0fbd5383120c88147323759574279 1104 lmbench_3.0-a9-1.dsc
+Checksums-Sha1: 0ac51bd0a871e0dc4d070aca8e734c57b3a122b2 417326 lmbench_3.0-a9.orig.tar.gz
+ da6cbb986a69d8a6e45ab54522ec0b616a573f8b 14264 lmbench_3.0-a9-1.diff.gz
+Checksums-Sha256: 8e1746e5e0299d67ce26469fba6dfdabcd5125f4a07403cb635f4be76c1ab00b 417326 lmbench_3.0-a9.orig.tar.gz
+ 9f3784259adbb5d9c8fa2b386119c18caf9458137aa76bb236db66978a99ad1a 14264 lmbench_3.0-a9-1.diff.gz
+
+Package: linux-firmware
+Binary: linux-firmware, nic-firmware, scsi-firmware
+Version: 1.98~linaro1
+Section: misc
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 4.0.0), rsync, gcc
+Architecture: all
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-firmware
+Files:
+ fed164ce496eaa4b826daa269e7b3d8e 17180072 linux-firmware_1.98~linaro1.tar.gz
+ 2f1fe26fe620969ded9ca4d33cc729e1 1143 linux-firmware_1.98~linaro1.dsc
+Vcs-Git: git://kernel.ubuntu.com/ubuntu/linux-firmware.git
+Package-List: linux-firmware deb misc optional
+ nic-firmware udeb debian-installer optional
+ scsi-firmware udeb debian-installer optional
+Checksums-Sha1: 8f391c6f6079387ab01eb2c0ef6d2bdf40a1b5c0 17180072 linux-firmware_1.98~linaro1.tar.gz
+Checksums-Sha256: 7530380927bb85dad43b741e31134857b1c31015c7e4ebaa8b641a1cd6965c01 17180072 linux-firmware_1.98~linaro1.tar.gz
+
+Package: fwts
+Binary: fwts, libfwtsiasl1, libfwtsacpica1, libfwts1, fwts-frontend, fwts-efi-runtime-dkms
+Version: 0.26.06-0ubuntu1
+Section: devel
+Maintainer: Firmware Testing Team <fwts-devel@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~), autoconf, automake, libtool, libpcre3-dev (>= 7.8), libjson0-dev (>= 0.9), flex, bison, hardening-wrapper, dh-autoreconf, dkms
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/f/fwts
+Files:
+ c349284b31fbca43a5ff2ab5df97fbb8 1292372 fwts_0.26.06.orig.tar.gz
+ 3a3f66f6800d26d33563bb514037ebf9 25792 fwts_0.26.06-0ubuntu1.debian.tar.gz
+ 20292ef6348fa5e014aaa399f5e6c2bb 2266 fwts_0.26.06-0ubuntu1.dsc
+Uploaders: Colin King <colin.king@ubuntu.com>, Keng-Yu Lin <kengyu@ubuntu.com>, Alex Hung <alex.hung@canonical.com>, Chris Van Hoof <vanhoof@canonical.com>, Ivan Hu <ivan.hu@canonical.com>
+Checksums-Sha1: d31f61507c68c09b2900bf68880159b677a89c27 1292372 fwts_0.26.06.orig.tar.gz
+ 0710fcafe03dc42dc79420b4a2b15564dd416e8b 25792 fwts_0.26.06-0ubuntu1.debian.tar.gz
+Package-List: fwts deb devel optional
+ fwts-efi-runtime-dkms deb devel optional
+ fwts-frontend deb devel optional
+ libfwts1 deb devel optional
+ libfwtsacpica1 deb devel optional
+ libfwtsiasl1 deb devel optional
+Checksums-Sha256: f26d6b37d8c99f4b15caa33ee887104ac1b63d40c5d45cb0a7c6f1a388adaa21 1292372 fwts_0.26.06.orig.tar.gz
+ 36fc03d2127bfdd9fa0b7aaff4636dc2b96b14b93283f79ba844c38a394db229 25792 fwts_0.26.06-0ubuntu1.debian.tar.gz
+
+Package: glmark2
+Binary: glmark2, glmark2-es2, glmark2-data
+Version: 2012.12-0~linaro1~quantal1
+Section: misc
+Maintainer: Alexandros Frantzis <alexandros.frantzis@linaro.org>
+Build-Depends: debhelper (>= 7.0.50~), libegl1-mesa-dev | libegl1-x11-dev, libgl1-mesa-dev | libgl1-dev, libgles2-mesa-dev | libgles2-dev, libjpeg-dev, libpng12-dev, libx11-dev, pkg-config, python (>= 2.4)
+Architecture: any all
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/main/g/glmark2
+Files:
+ 2e437fd5b56c5f49dd7ef48f49b6cfe4 7801110 glmark2_2012.12-0~linaro1~quantal1.tar.gz
+ 304800023c0868f697e102f779ab0b1c 1279 glmark2_2012.12-0~linaro1~quantal1.dsc
+Checksums-Sha1: b4f06cd19f460d0c50547bf1661df4fbfb26e086 7801110 glmark2_2012.12-0~linaro1~quantal1.tar.gz
+Package-List: glmark2 deb misc optional
+ glmark2-data deb misc optional
+ glmark2-es2 deb misc optional
+Homepage: https://launchpad.net/glmark2
+Checksums-Sha256: 347ad5203f2d2090284e15853f561ecc96db95f2932e0698368d22d90004ef9f 7801110 glmark2_2012.12-0~linaro1~quantal1.tar.gz
+
+Package: linaro-meta
+Binary: linaro-nano, linaro-nano-dev, linaro-headless, linaro-development, linaro-x11-base, linaro-xfce-base, linaro-alip, linaro-graphical-engineering, linaro-ubuntu-desktop, linaro-lamp-server, linaro-headless-dev, linaro-development-dev, linaro-x11-base-dev, linaro-xfce-base-dev, linaro-alip-dev, linaro-graphical-engineering-dev, linaro-ubuntu-desktop-dev, linaro-lamp-server-dev
+Version: 036-quantal1
+Section: metapackages
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: debhelper (>= 7.0.8), germinate (>= 1.18)
+Architecture: armhf
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/main/l/linaro-meta
+Files:
+ 72cb4e9320aa6486380b98b7ce4a5fad 24227 linaro-meta_036-quantal1.tar.gz
+ 8fd26e2f4edc3b149fff26aaa3e8e829 2137 linaro-meta_036-quantal1.dsc
+Checksums-Sha1: cbd8355d158a97353c431b3be7ec283234a60b88 24227 linaro-meta_036-quantal1.tar.gz
+Package-List: linaro-alip deb metapackages optional
+ linaro-alip-dev deb metapackages optional
+ linaro-development deb metapackages optional
+ linaro-development-dev deb metapackages optional
+ linaro-graphical-engineering deb metapackages optional
+ linaro-graphical-engineering-dev deb metapackages optional
+ linaro-headless deb metapackages optional
+ linaro-headless-dev deb metapackages optional
+ linaro-lamp-server deb metapackages optional
+ linaro-lamp-server-dev deb metapackages optional
+ linaro-nano deb metapackages optional
+ linaro-nano-dev deb metapackages optional
+ linaro-ubuntu-desktop deb metapackages optional
+ linaro-ubuntu-desktop-dev deb metapackages optional
+ linaro-x11-base deb metapackages optional
+ linaro-x11-base-dev deb metapackages optional
+ linaro-xfce-base deb metapackages optional
+ linaro-xfce-base-dev deb metapackages optional
+Checksums-Sha256: 2c96ef0af93d7c8deb69e92cbdf50f6e0a527d7dab0a4c21e5b8af76a4e7cbef 24227 linaro-meta_036-quantal1.tar.gz
+
+Package: u-boot-linaro
+Binary: u-boot-linaro-highbank, u-boot-linaro-igep0020, u-boot-linaro-omap3-beagle, u-boot-linaro-omap3-overo, u-boot-linaro-omap4-panda, u-boot-linaro-omap4-panda-splusb, u-boot-linaro-omap4-sdp4430, u-boot-linaro-arndale5250, u-boot-linaro-origen, u-boot-linaro-origen-quad, u-boot-linaro-smdk5250, u-boot-linaro-snowball
+Version: 2013.01+7644+49+201303280928~quantal1
+Section: misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: quilt (>= 0.46-7~), debhelper (>= 7.0.50~), gcc-4.5
+Architecture: armhf
+Standards-Version: 3.9.1
+Format: 1.0
+Directory: pool/main/u/u-boot-linaro
+Files:
+ 79fa762ba6ed0a23259c05ecd18e5171 12887621 u-boot-linaro_2013.01+7644+49+201303280928~quantal1.tar.gz
+ 049ab05b54ac3a5e3a413ddd2e89a1cc 1605 u-boot-linaro_2013.01+7644+49+201303280928~quantal1.dsc
+Vcs-Git: git://git.linaro.org/boot/u-boot-linaro-stable.git
+Package-List: u-boot-linaro-arndale5250 deb misc extra
+ u-boot-linaro-highbank deb misc extra
+ u-boot-linaro-igep0020 deb misc extra
+ u-boot-linaro-omap3-beagle deb misc extra
+ u-boot-linaro-omap3-overo deb misc extra
+ u-boot-linaro-omap4-panda deb misc extra
+ u-boot-linaro-omap4-panda-splusb deb misc extra
+ u-boot-linaro-omap4-sdp4430 deb misc extra
+ u-boot-linaro-origen deb misc extra
+ u-boot-linaro-origen-quad deb misc extra
+ u-boot-linaro-smdk5250 deb misc extra
+ u-boot-linaro-snowball deb misc extra
+Checksums-Sha1: 751f5fe8ebf4dbb0658a625e3e7ac66d1f62f3d5 12887621 u-boot-linaro_2013.01+7644+49+201303280928~quantal1.tar.gz
+Checksums-Sha256: 5f8ea6f021100574709337f0f35904e26066bf60ef24d86a849f61da144c737a 12887621 u-boot-linaro_2013.01+7644+49+201303280928~quantal1.tar.gz
+Original-Maintainer: John Rigby <john.rigby@linaro.org>
+
+Package: linaro-alip-default-settings
+Binary: linaro-alip-default-settings
+Version: 11.04.18.1
+Section: x11
+Maintainer: Linaro Developers <linaro-dev@lists.linaro.org>
+Build-Depends: debhelper (>= 7.0.50~), intltool
+Architecture: all
+Standards-Version: 3.9.1
+Format: 3.0 (native)
+Directory: pool/main/l/linaro-alip-default-settings
+Files:
+ 7c99853ef31a04dd4883341b7cf71eeb 29564 linaro-alip-default-settings_11.04.18.1.tar.gz
+ 6ddfa87b1265d17c3bc6a513ee8c67d9 1417 linaro-alip-default-settings_11.04.18.1.dsc
+Checksums-Sha1: be8eefb7919f6b5dedfa2d28356f4dadc16be369 29564 linaro-alip-default-settings_11.04.18.1.tar.gz
+Vcs-Browser: http://bazaar.launchpad.net/~linaro-maintainers/xubuntu-default-settings/linaro-alip-default-settings/files
+Vcs-Bzr: lp:~linaro-maintainers/xubuntu-default-settings/linaro-alip-default-settings
+Homepage: https://launchpad.net/linaro-alip-default-settings
+Checksums-Sha256: cd800595bcc83661d6dd66e3242413dd0c5fc71fe8b22c205c46adbd827da906 29564 linaro-alip-default-settings_11.04.18.1.tar.gz
+
+Package: powerdebug
+Binary: powerdebug
+Version: 0.6.3-2013.04-0ubuntu1~linaro1
+Section: utils
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: debhelper (>= 8), libncurses5-dev
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/p/powerdebug
+Files:
+ 96d8f6663ee8a40ea6137f91bbd9cb01 20431 powerdebug_0.6.3-2013.04.orig.tar.gz
+ 9dfc4fcbaa6809b31aaf177b8d1582ca 6744 powerdebug_0.6.3-2013.04-0ubuntu1~linaro1.debian.tar.gz
+ 936b647ee4c06b9ea4ee60093cf3d31e 1361 powerdebug_0.6.3-2013.04-0ubuntu1~linaro1.dsc
+Vcs-Git: git://git.linaro.org/tools/powerdebug.git release
+Package-List: powerdebug deb utils optional
+Checksums-Sha1: 283ac1890194c1ec1757804e1fb124d56ed58af6 20431 powerdebug_0.6.3-2013.04.orig.tar.gz
+ 8961e9e755269e571643df4144a5c3eadebde9be 6744 powerdebug_0.6.3-2013.04-0ubuntu1~linaro1.debian.tar.gz
+Checksums-Sha256: 05f5fc5936c18584bb8e1a757ff2249df03653d06b4a59ca2415043dd0a934e2 20431 powerdebug_0.6.3-2013.04.orig.tar.gz
+ df2e614c23606bde27650655b337fa5f6e50bfc64db9495b64d8a53a5e75c2da 6744 powerdebug_0.6.3-2013.04-0ubuntu1~linaro1.debian.tar.gz
+
+Package: linaro-overlay
+Binary: linaro-overlay, linaro-overlay-minimal, chessy-overlay, chessy-overlay-minimal
+Version: 1112.2
+Section: utils
+Maintainer: Linaro Developers <linaro-dev@lists.linaro.org>
+Build-Depends: debhelper (>= 7)
+Architecture: all
+Standards-Version: 3.9.1
+Format: 1.0
+Directory: pool/main/l/linaro-overlay
+Files:
+ 49abb130223dd18f9fd06253540db42c 6227 linaro-overlay_1112.2.tar.gz
+ e92957c6654df47ca2aec7cf9fc4e54e 1616 linaro-overlay_1112.2.dsc
+Checksums-Sha1: 941be0ba42b70b3562ea552ed3d3e8c3bb5c86be 6227 linaro-overlay_1112.2.tar.gz
+Package-List: chessy-overlay deb utils optional
+ chessy-overlay-minimal deb utils optional
+ linaro-overlay deb utils optional
+ linaro-overlay-minimal deb utils optional
+Checksums-Sha256: fe10823eeef58f3a74e1b650c15ba5fa7458face0e1d04b8590780b9502cfb31 6227 linaro-overlay_1112.2.tar.gz
+
+Package: piglit
+Binary: piglit
+Version: 0.0.0-1~tag2
+Section: graphics
+Maintainer: Tom Gall <tom.gall@linaro.org>
+Build-Depends: debhelper (>= 8.0.0), cmake, libgles2-mesa-dev, waffle, pkg-config, g++ (>= 4.7), libtiff4-dev, zlib1g-dev, libpng12-dev, python-numpy, freeglut3-dev, x11proto-gl-dev, libxrender-dev, python-mako
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/p/piglit
+Files:
+ 3b6da117b5c424b21a0f4a6c2649288e 2278506 piglit_0.0.0.orig.tar.gz
+ f8e6c13f75b7fe9ba1fa41a458a2a76d 4112 piglit_0.0.0-1~tag2.debian.tar.gz
+ 93b09ef7e451e2113a2c1c993c9cd731 1632 piglit_0.0.0-1~tag2.dsc
+Checksums-Sha1: 44ec9baa5017ed5303e8b2ba879872ebd11f3698 2278506 piglit_0.0.0.orig.tar.gz
+ 6c75d279fc4e39fc40fca1c63bb1a229dab3e952 4112 piglit_0.0.0-1~tag2.debian.tar.gz
+Package-List: piglit deb graphics extra
+Vcs-Git: git://anongit.freedesktop.org/git/piglit
+Vcs-Browser: http://cgit.freedesktop.org/piglit
+Homepage: http://piglit.freedesktop.org/
+Checksums-Sha256: ffbce5f6b91d61b70f58e4f091098973d77bc7495c80dbf1650337966d49f8f5 2278506 piglit_0.0.0.orig.tar.gz
+ 08f46bb2c6d0ec02615dc9afdd956c8bb545156e4ef6051be0e02638e5a01e07 4112 piglit_0.0.0-1~tag2.debian.tar.gz
+
+Package: qemu-linaro
+Binary: qemu-linaro-keymaps, qemu-system, qemu-user, qemu-user-static, qemu-kvm-extras, qemu-kvm-extras-static
+Version: 1.4.0-2013.02+git67+20130412+8f8d8e0-0linaro1
+Section: misc
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: debhelper (>= 7.0.50~), zlib1g-dev, libasound2-dev [!kfreebsd-any], libsdl1.2-dev (>> 1.2.1), libx11-dev, libpulse-dev, libncurses5-dev, libbrlapi-dev, libcurl4-gnutls-dev, libgnutls-dev, libsasl2-dev, uuid-dev, libvdeplug2-dev [!kfreebsd-any], libbluetooth-dev [!kfreebsd-any], texinfo, libfdt-dev, libpixman-1-dev
+Build-Conflicts: oss4-dev
+Architecture: all amd64 arm armel armhf hppa i386 ia64 mips mipsel powerpc sparc sparc64 kfreebsd-i386 kfreebsd-amd64 ppc64
+Standards-Version: 3.9.1
+Format: 3.0 (quilt)
+Directory: pool/main/q/qemu-linaro
+Files:
+ f57690ebc9d49cd843a3e8772735a550 6154513 qemu-linaro_1.4.0-2013.02+git67+20130412+8f8d8e0.orig.tar.bz2
+ b441b9c4c2f3c4d4b562ed2aa9062c65 20439 qemu-linaro_1.4.0-2013.02+git67+20130412+8f8d8e0-0linaro1.debian.tar.gz
+ d7ea79ab5e1fd98389fb06ada7ca2170 2618 qemu-linaro_1.4.0-2013.02+git67+20130412+8f8d8e0-0linaro1.dsc
+Uploaders: Aurelien Jarno <aurel32@debian.org>, Riku Voipio <riku.voipio@iki.fi>, Vagrant Cascadian <vagrant@debian.org>
+Checksums-Sha1: 8d6763504b897830857bd7828d70cec4ade960de 6154513 qemu-linaro_1.4.0-2013.02+git67+20130412+8f8d8e0.orig.tar.bz2
+ 0da1fbb66c6e52f2cf2bb377a9690dc8152cfbf2 20439 qemu-linaro_1.4.0-2013.02+git67+20130412+8f8d8e0-0linaro1.debian.tar.gz
+Package-List: qemu-kvm-extras deb misc optional
+ qemu-kvm-extras-static deb misc optional
+ qemu-linaro-keymaps deb misc optional
+ qemu-system deb misc optional
+ qemu-user deb misc optional
+ qemu-user-static deb misc optional
+Vcs-Bzr: lp:ubuntu/qemu-linaro
+Original-Maintainer: Debian QEMU Team <pkg-qemu-devel@lists.alioth.debian.org>
+Homepage: https://launchpad.net/qemu-linaro/
+Checksums-Sha256: b1fc8891d5b6bf7bb46304ae21af325315a1f2aca8a06ff3d586968558a6652d 6154513 qemu-linaro_1.4.0-2013.02+git67+20130412+8f8d8e0.orig.tar.bz2
+ 74ef59f0f2db2b9b151b75f81e69004fb360a43176c009f8ce42bd272ac102fd 20439 qemu-linaro_1.4.0-2013.02+git67+20130412+8f8d8e0-0linaro1.debian.tar.gz
+Dm-Upload-Allowed: yes
+
+Package: libhugetlbfs
+Binary: libhugetlbfs0, libhugetlbfs-tests, hugepages, libhugetlbfs-dev
+Version: 2.15~git3+ee00e31-0linaro2
+Section: libs
+Maintainer: Frank Lin PIAT <fpiat@klabs.be>, Vincent Danjean <Vincent.Danjean@ens-lyon.org>
+Build-Depends: debhelper (>= 7.0.50~), quilt
+Architecture: amd64 armhf i386 powerpc ppc64
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/libh/libhugetlbfs
+Files:
+ 5092ad207a28e732f00fb552a2182ec6 178860 libhugetlbfs_2.15~git3+ee00e31.orig.tar.gz
+ b5898fe340a5438897d699702435e249 9091 libhugetlbfs_2.15~git3+ee00e31-0linaro2.debian.tar.gz
+ 6a4c85e8f78dbac21586b570bb0fa5f6 1565 libhugetlbfs_2.15~git3+ee00e31-0linaro2.dsc
+Checksums-Sha1: 1c17a3867e89a946026a4888c6dc448d102bc3c8 178860 libhugetlbfs_2.15~git3+ee00e31.orig.tar.gz
+ 696aecebb5a5114c39cdc4b368059ea78b1f5917 9091 libhugetlbfs_2.15~git3+ee00e31-0linaro2.debian.tar.gz
+Package-List: hugepages deb admin extra
+ libhugetlbfs-dev deb libdevel extra
+ libhugetlbfs-tests deb libs extra
+ libhugetlbfs0 deb libs extra
+Homepage: http://libhugetlbfs.sourceforge.net/
+Checksums-Sha256: 390dc024bc09cf7c0ebe401303fdb4131a34860a7934ab86c46ac1b6d4700c6c 178860 libhugetlbfs_2.15~git3+ee00e31.orig.tar.gz
+ c0a28a29420c38e33a762cc69cebca0678cf97d6d7fdc54622253957d172a42a 9091 libhugetlbfs_2.15~git3+ee00e31-0linaro2.debian.tar.gz
+
+Package: gator
+Binary: gator, gator-daemon, arm-ds5-target, gator-module-dkms
+Version: 5.14.0-20130403160152
+Section: devel
+Maintainer: Pawel Moll <pawel.moll@arm.com>
+Build-Depends: debhelper (>= 7.0.5), vim-common
+Architecture: armhf
+Standards-Version: 3.9.2
+Format: 1.0
+Directory: pool/main/g/gator
+Files:
+ 8982cec4ef2fd479c1e7c905175916ec 705704 gator_5.14.0-20130403160152.tar.gz
+ ed6e1c59c337459518f31ef7a8379601 1277 gator_5.14.0-20130403160152.dsc
+Checksums-Sha1: bf42ff79b54d0e9e504efd4e19a7b7600c4e8423 705704 gator_5.14.0-20130403160152.tar.gz
+Package-List: arm-ds5-target deb devel extra
+ gator deb devel extra
+ gator-daemon deb devel extra
+ gator-module-dkms deb kernel extra
+Homepage: http://www.arm.com/ds-5
+Checksums-Sha256: a853787ad066b64ca45e49c246217208017eab337eb7980e49a2e2bdc9aa7628 705704 gator_5.14.0-20130403160152.tar.gz
+
+Package: startupfiles
+Binary: startupfiles
+Version: 3.0.8-2linaro1
+Section: utils
+Maintainer: Igloo community <packages@igloocommunity.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: armel armhf
+Standards-Version: 3.9.1
+Format: 3.0 (native)
+Directory: pool/main/s/startupfiles
+Files:
+ e6fcbc7ef9753f32b1b6596c89a7580e 68522 startupfiles_3.0.8-2linaro1.tar.gz
+ 59ddc71efa9256778e2d00024f815612 1166 startupfiles_3.0.8-2linaro1.dsc
+Checksums-Sha1: 5fb58677c8151f00ff3e2106faa867b67ed88d82 68522 startupfiles_3.0.8-2linaro1.tar.gz
+Package-List: startupfiles deb utils extra
+Homepage: http://www.igloocommunity.org
+Checksums-Sha256: 58f591286213beebd3c4c39b4e7093fbf40fd1dd0d24a8220d622bf21eda08d7 68522 startupfiles_3.0.8-2linaro1.tar.gz
+
+Package: origen-config-extra
+Binary: origen-config-extra
+Version: 0.1
+Section: utils
+Maintainer: Linaro Developers <linaro-dev@lists.linaro.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (native)
+Directory: pool/main/o/origen-config-extra
+Files:
+ 7fd575dbd193b9c5f7828820a0d5cfe0 1676 origen-config-extra_0.1.tar.gz
+ b22f0138847178b1c59a1503cd745856 1409 origen-config-extra_0.1.dsc
+Checksums-Sha1: cfcf68c10e829c48cbf459cb101c6a6e62dc225b 1676 origen-config-extra_0.1.tar.gz
+Checksums-Sha256: db4c1ff63753e5405f425c21647ef612dd43be862d231c82157903b0807912b2 1676 origen-config-extra_0.1.tar.gz
+
+Package: origen-bluetooth
+Binary: origen-bluetooth
+Version: 0.10
+Section: net
+Maintainer: Angus Ainslie <angus.ainslie@linaro.org>
+Build-Depends: debhelper (>= 8.0.0)
+Architecture: armel armhf
+Standards-Version: 3.9.2
+Format: 3.0 (native)
+Directory: pool/main/o/origen-bluetooth
+Files:
+ 64f3fd31d4bc0818662f3556f17fa29c 3732 origen-bluetooth_0.10.tar.gz
+ 8a46cca7ac20ceb20df87e0c76aa70d4 1505 origen-bluetooth_0.10.dsc
+Checksums-Sha1: c03484b6ea7a09a1a14b7577ed05f2523da2fe71 3732 origen-bluetooth_0.10.tar.gz
+Package-List: origen-bluetooth deb net extra
+Homepage: https://launchpad.net/~linaro-landing-team-samsung
+Checksums-Sha256: e5bf0751009e9a4b317effeee1c75354d7ae4b4de7e85d595a7552d7f99cb033 3732 origen-bluetooth_0.10.tar.gz
+
+Package: snowball-init
+Binary: snowball-init
+Version: 1.4.1-0linaro1
+Section: admin
+Maintainer: Kalle Vahlman <kalle.vahlman@movial.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: armel armhf
+Standards-Version: 3.9.1
+Format: 3.0 (native)
+Directory: pool/main/s/snowball-init
+Files:
+ ced3a69b87711f5bda9f585dbf2e30fa 3194 snowball-init_1.4.1-0linaro1.tar.gz
+ 1fefe7ec5e5e9dd50b415b0483cd4750 1506 snowball-init_1.4.1-0linaro1.dsc
+Checksums-Sha1: 0b33a2b24a394663b1140f3ce6151927f41e9d19 3194 snowball-init_1.4.1-0linaro1.tar.gz
+Package-List: snowball-init deb admin extra
+Homepage: http://igloocommunity.org
+Checksums-Sha256: 98fd138686c6bc6113dd8f39a599e6f8dbfe76e3cc6f6070c71c300994c89fe6 3194 snowball-init_1.4.1-0linaro1.tar.gz
+
+Package: hdmiservice
+Binary: hdmiservice-dev, hdmiservice
+Version: 1.1-0linaro1
+Section: libs
+Maintainer: John Fredriksson <john.xj.fredriksson@stericsson.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: armel armhf
+Standards-Version: 3.9.1
+Format: 3.0 (native)
+Directory: pool/main/h/hdmiservice
+Files:
+ 9090e692000de8a03ce8d6b1fe8740bb 22486 hdmiservice_1.1-0linaro1.tar.gz
+ 32074f0b328ef3566e4f5ff81af807cc 1554 hdmiservice_1.1-0linaro1.dsc
+Checksums-Sha1: eb76dd2797e3bc5a2e74d91b7c6e4370a27bf37b 22486 hdmiservice_1.1-0linaro1.tar.gz
+Package-List: hdmiservice deb libs extra
+ hdmiservice-dev deb libdevel extra
+Homepage: http://igloocommunity.org
+Checksums-Sha256: 27485f9b715b559b0c4214cc0d07165512a8651bf2326a73b1c9a84e919d4de5 22486 hdmiservice_1.1-0linaro1.tar.gz
+
+Package: snowball-mactool
+Binary: snowball-mactool
+Version: 1.0-0linaro2
+Section: misc
+Maintainer: Kalle Vahlman <kalle.vahlman@movial.com>
+Build-Depends: debhelper (>= 8.0.0)
+Architecture: armel armhf
+Standards-Version: 3.9.2
+Format: 3.0 (native)
+Directory: pool/main/s/snowball-mactool
+Files:
+ 78a17fa3817fb1b4791c6826a71e1a20 10818 snowball-mactool_1.0-0linaro2.tar.gz
+ 1d2d237d3af2ae091d84146f07a01b7b 1520 snowball-mactool_1.0-0linaro2.dsc
+Checksums-Sha1: ef7b4d6edce6a274a42d690544343266d6b05b68 10818 snowball-mactool_1.0-0linaro2.tar.gz
+Package-List: snowball-mactool deb misc extra
+Homepage: http://www.igloocommunity.org
+Checksums-Sha256: b6ca4aec569855365f641f0c0940243636d4294ab6c76e49873fee7b054a6f65 10818 snowball-mactool_1.0-0linaro2.tar.gz
+
+Package: origen-wlan
+Binary: origen-wlan
+Version: 0.9
+Section: net
+Maintainer: Linaro Developers <linaro-dev@lists.linaro.org>
+Build-Depends: debhelper (>= 8.0.0)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (native)
+Directory: pool/main/o/origen-wlan
+Files:
+ 6ee5071d3928debdc95fb485062aed73 2350 origen-wlan_0.9.tar.gz
+ b716d6541dc263d57c4189b8d9e3a943 950 origen-wlan_0.9.dsc
+Checksums-Sha1: f1584f6676594acd477d1778e352ca9edc6396ba 2350 origen-wlan_0.9.tar.gz
+Package-List: origen-wlan deb net extra
+Homepage: https://launchpad.net/~linaro-landing-team-samsung
+Checksums-Sha256: dc87895e1b1e6d5514baa28cba5b1cde18feea11904ec498ff529252fbc751d7 2350 origen-wlan_0.9.tar.gz
+
+Package: lbsd
+Binary: lbsd
+Version: 1.0.0-7linaro1
+Section: misc
+Maintainer: snowball <packages@igloocommunity.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: armhf
+Standards-Version: 3.9.1
+Format: 3.0 (native)
+Directory: pool/main/l/lbsd
+Files:
+ 2ada46a3f7c24e52440e60e2ecc95f7f 291999 lbsd_1.0.0-7linaro1.tar.gz
+ 9eeb52ad318537cbd239480b4cf11f78 1108 lbsd_1.0.0-7linaro1.dsc
+Checksums-Sha1: f7e0d9b2a88b4826c63e6605fec917c28fc446fb 291999 lbsd_1.0.0-7linaro1.tar.gz
+Package-List: lbsd deb misc extra
+Homepage: http://www.igloocommunity.org/
+Checksums-Sha256: b8643e5fe9dfabf432b2d6b1121344b75266efe9e6180784c57f3199d64a9455 291999 lbsd_1.0.0-7linaro1.tar.gz
+
+Package: b2r2lib
+Binary: b2r2lib-dev, b2r2lib
+Version: 1.0.1-3linaro1
+Section: libs
+Maintainer: packages@igloocommunity.org
+Build-Depends: debhelper (>= 7.0.50~), linux-headers-linaro-lt-ux500
+Architecture: armel armhf
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/main/b/b2r2lib
+Files:
+ 6d46d0629f96f4440f90d9eb353f1d7a 14218 b2r2lib_1.0.1-3linaro1.tar.gz
+ 570f5d3d91929b51353951fbd6a22a47 1539 b2r2lib_1.0.1-3linaro1.dsc
+Checksums-Sha1: 0b5390c8474a03a668537c712035caef6072b9ea 14218 b2r2lib_1.0.1-3linaro1.tar.gz
+Package-List: b2r2lib deb libs extra
+ b2r2lib-dev deb libdevel extra
+Homepage: http://www.igloocommunity.org
+Checksums-Sha256: 683a3ada02eb53a81d86a54ac077b033d95cee87b04e5724afaf7e3539b72b0e 14218 b2r2lib_1.0.1-3linaro1.tar.gz
+
+Package: ubuntu-origen-extras-connectivity
+Binary: ubuntu-origen-extras-connectivity
+Version: 0.1
+Section: misc
+Maintainer: Linaro Developers <linaro-dev@linaro.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (native)
+Directory: pool/main/u/ubuntu-origen-extras-connectivity
+Files:
+ 5dd8992cc6a2d3ab9f5b1802e140599a 1259 ubuntu-origen-extras-connectivity_0.1.tar.gz
+ 064d2c4f4ed2f9b00b9007b2bd1e2dde 1473 ubuntu-origen-extras-connectivity_0.1.dsc
+Checksums-Sha1: e4e67d68d610f50a5e211d425aae34248b8c494d 1259 ubuntu-origen-extras-connectivity_0.1.tar.gz
+Checksums-Sha256: fcee8a8d66e56e56c1fb2555bea86b681d68a51ce879703d778f716108612cef 1259 ubuntu-origen-extras-connectivity_0.1.tar.gz
+
+Package: ubuntu-origen-extras
+Binary: ubuntu-origen-extras
+Version: 0.1
+Section: misc
+Maintainer: Linaro Developers <linaro-dev@linaro.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: all
+Standards-Version: 3.9.2
+Format: 3.0 (native)
+Directory: pool/main/u/ubuntu-origen-extras
+Files:
+ 47be8c47c424c5b975564ae72381ef4b 1316 ubuntu-origen-extras_0.1.tar.gz
+ fa7ded25b9aab04e35fd3d3ef5dd696d 1408 ubuntu-origen-extras_0.1.dsc
+Checksums-Sha1: d85dc271c439124ca897af35239d9b98c620c072 1316 ubuntu-origen-extras_0.1.tar.gz
+Checksums-Sha256: 0bc0fa08120658a7e30a8a0c515180bc328c66c2a74be1ad617c0530d332ce47 1316 ubuntu-origen-extras_0.1.tar.gz
+
+Package: linux-meta-linaro-lt-omap
+Binary: linux-headers-linaro-lt-omap, linux-image-linaro-lt-omap, linux-tools-linaro-lt-omap
+Version: 3.4.0.2.2
+Section: devel
+Maintainer: John Rigby <john.rigby@linaro.org>
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Architecture: armel armhf
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-meta-linaro-lt-omap
+Files:
+ 11da62c0748e3225bde73f1920571170 3019 linux-meta-linaro-lt-omap_3.4.0.2.2.tar.gz
+ 07e1b35dd29db2c62a14329cad396434 1699 linux-meta-linaro-lt-omap_3.4.0.2.2.dsc
+Checksums-Sha1: d37e01d2fd63acc9f66a719502304912a21aeba9 3019 linux-meta-linaro-lt-omap_3.4.0.2.2.tar.gz
+Package-List: linux-headers-linaro-lt-omap deb devel optional
+ linux-image-linaro-lt-omap deb metapackages optional
+ linux-tools-linaro-lt-omap deb metapackages optional
+Checksums-Sha256: edd6507c436d96f86e6205f00e4b3912074334048a5fccacc2349f2a1781858d 3019 linux-meta-linaro-lt-omap_3.4.0.2.2.tar.gz
+
+Package: linux-meta-linaro-lt-vexpress
+Binary: linux-headers-linaro-lt-vexpress, linux-image-linaro-lt-vexpress, linux-tools-linaro-lt-vexpress
+Version: 3.9.0.1.1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Architecture: armhf
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-meta-linaro-lt-vexpress
+Files:
+ 7c623552e3e9540d9f13d141b8e730d4 3438 linux-meta-linaro-lt-vexpress_3.9.0.1.1.tar.gz
+ 6cc616d434d66f6451269ff12adf77ff 1295 linux-meta-linaro-lt-vexpress_3.9.0.1.1.dsc
+Vcs-Git: http://git.linaro.org/git-ro/ubuntu/linux-meta-linaro.git
+Package-List: linux-headers-linaro-lt-vexpress deb devel optional
+ linux-image-linaro-lt-vexpress deb metapackages optional
+ linux-tools-linaro-lt-vexpress deb metapackages optional
+Checksums-Sha1: 816972a702122709d7099d1f4c1dcd7cb2710705 3438 linux-meta-linaro-lt-vexpress_3.9.0.1.1.tar.gz
+Checksums-Sha256: c78cc65fc224f4b69b71747ce60e7fe5e6edc1d735009232762f4497731a3ad8 3438 linux-meta-linaro-lt-vexpress_3.9.0.1.1.tar.gz
+
+Package: kvm-boot-wrapper
+Binary: kvm-boot-wrapper
+Version: 0.1~ppa1+bzr48+bzr16~quantal1
+Section: misc
+Maintainer: Michael Hope <michael.hope@linaro.org>
+Build-Depends: debhelper (>= 8.0.0), gcc-arm-linux-gnueabi [!armel !armhf], libc6-dev-armel-cross [!armel !armhf]
+Architecture: any
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/main/k/kvm-boot-wrapper
+Files:
+ f18fb6bcba2f61db79853733bb62325f 32753 kvm-boot-wrapper_0.1~ppa1+bzr48+bzr16~quantal1.tar.gz
+ 83f753a18b5805cea7d1bda048b4143e 781 kvm-boot-wrapper_0.1~ppa1+bzr48+bzr16~quantal1.dsc
+Vcs-Git: git://git.linaro.org/arm/models/boot-wrapper.git
+Package-List: kvm-boot-wrapper deb misc extra
+Checksums-Sha1: 4cb9ffa54e71759bf7d643051e69261e4bb77a5d 32753 kvm-boot-wrapper_0.1~ppa1+bzr48+bzr16~quantal1.tar.gz
+Checksums-Sha256: 40126cb351f804476a5b5e54403faa90082c4053a15880323b9d2bc61e7d6281 32753 kvm-boot-wrapper_0.1~ppa1+bzr48+bzr16~quantal1.tar.gz
+
+Package: arm-virt-bl
+Binary: arm-virt-bl
+Version: 1.21-201209281449~precise1
+Section: utils
+Maintainer: Riku Voipio <riku.voipio@linaro.org>
+Build-Depends: debhelper (>= 8.0.0), gcc-arm-linux-gnueabihf [!armel !armhf], libc6-dev-armhf-cross [!armel !armhf]
+Architecture: armel armhf i386 amd64
+Standards-Version: 3.8.1
+Format: 1.0
+Directory: pool/main/a/arm-virt-bl
+Files:
+ 8a7bca427ce0854c1ee0178c2163e268 33144 arm-virt-bl_1.21-201209281449~precise1.tar.gz
+ f8c0265577e3373ad053b29793aac50a 787 arm-virt-bl_1.21-201209281449~precise1.dsc
+Checksums-Sha1: 69a2c59a37e600c7385891eac21a0e6f64f15832 33144 arm-virt-bl_1.21-201209281449~precise1.tar.gz
+Package-List: arm-virt-bl deb utils extra
+Homepage: http://git.linaro.org/gitweb?p=people/pundiramit/boot-wrapper.git;a=summary
+Checksums-Sha256: d3e2fbe08616b6d0450e8237f2d48f59c47fa00f2caff6c9cc10dcf94449f12d 33144 arm-virt-bl_1.21-201209281449~precise1.tar.gz
+
+Package: gatortests
+Binary: gatortests
+Version: 0.1.20120611-0linaro1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: debhelper (>= 8), python (>= 2.6.6-3~), python-all (>= 2.6.6-3~)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/g/gatortests
+Files:
+ c1b4ed8535b4296c6572b2577b877e07 1152 gatortests_0.1.20120611.orig.tar.gz
+ 76c6a394c793567c48ed4eda11d7db80 1332 gatortests_0.1.20120611-0linaro1.debian.tar.gz
+ 9e3da5c047b5ee5d760afa7f6fbd6ed3 1400 gatortests_0.1.20120611-0linaro1.dsc
+Uploaders: Fathi Boudra <fathi.boudra@linaro.org>
+Checksums-Sha1: 0950a91b15f32eb25a2f0ab3f304bf93e88c241f 1152 gatortests_0.1.20120611.orig.tar.gz
+ 4e10e5f2310c7be93aed66069402ca82f4bb2eeb 1332 gatortests_0.1.20120611-0linaro1.debian.tar.gz
+Package-List: gatortests deb devel optional
+Homepage: http://git.linaro.org/gitweb?p=qa/gatortests.git
+Checksums-Sha256: 0fb9d4cf4f683f36b9ef729c8f2e773d5aae58b907bcc6a92b76064d12542ac6 1152 gatortests_0.1.20120611.orig.tar.gz
+ e244cbb89c3013cf30ec4b0734f48093999e2b411f6a44a3c3aaa4d736d1af9b 1332 gatortests_0.1.20120611-0linaro1.debian.tar.gz
+
+Package: linux-linaro-lt-omap-3.4
+Binary: linux-linaro-tools-3.4.0-2-linaro-lt-omap, linux-image-3.4.0-2-linaro-lt-omap, linux-image-extra-3.4.0-2-linaro-lt-omap, linux-headers-3.4.0-2-linaro-lt-omap, linux-image-3.4.0-2-linaro-lt-omap-dbgsym, kernel-image-3.4.0-2-linaro-lt-omap-di
+Version: 3.4.0-2.2~ci+121213205906
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], device-tree-compiler [powerpc], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armel armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-lt-omap-3.4
+Files:
+ 4db2439ddc44e0794572a942d177c1e5 105994222 linux-linaro-lt-omap-3.4_3.4.0-2.2~ci+121213205906.tar.gz
+ ab8ff03d7f1516d00a658360bdee5884 2268 linux-linaro-lt-omap-3.4_3.4.0-2.2~ci+121213205906.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-lt-omap-3.4_3.4.0-2.2--ci+121213205906
+Package-List: kernel-image-3.4.0-2-linaro-lt-omap-di udeb debian-installer extra
+ linux-headers-3.4.0-2-linaro-lt-omap deb devel optional
+ linux-image-3.4.0-2-linaro-lt-omap deb kernel optional
+ linux-image-3.4.0-2-linaro-lt-omap-dbgsym deb devel optional
+ linux-image-extra-3.4.0-2-linaro-lt-omap deb kernel optional
+ linux-linaro-tools-3.4.0-2-linaro-lt-omap deb devel optional
+Checksums-Sha1: 280e9ff78cefd66f79dc4464625f400543b59217 105994222 linux-linaro-lt-omap-3.4_3.4.0-2.2~ci+121213205906.tar.gz
+Checksums-Sha256: 105c937a592a6632e9bc169a1b3602e4cc70186bcf510a0aaef47ce6338e4966 105994222 linux-linaro-lt-omap-3.4_3.4.0-2.2~ci+121213205906.tar.gz
+
+Package: linux-linaro-llt-omap-3.4
+Binary: linux-linaro-tools-3.4.0-2-linaro-llt-omap, linux-image-3.4.0-2-linaro-llt-omap, linux-image-extra-3.4.0-2-linaro-llt-omap, linux-headers-3.4.0-2-linaro-llt-omap, linux-image-3.4.0-2-linaro-llt-omap-dbgsym, kernel-image-3.4.0-2-linaro-llt-omap-di
+Version: 3.4.0-2.2~ci+130202014720
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], device-tree-compiler [powerpc], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armel armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-llt-omap-3.4
+Files:
+ 3810041187a71bbcab0af0cc021ee641 104283813 linux-linaro-llt-omap-3.4_3.4.0-2.2~ci+130202014720.tar.gz
+ e7b1842496ad4b9eda75f0bc19e2feff 2285 linux-linaro-llt-omap-3.4_3.4.0-2.2~ci+130202014720.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-llt-omap-3.4_3.4.0-2.2--ci+130202014720
+Package-List: kernel-image-3.4.0-2-linaro-llt-omap-di udeb debian-installer extra
+ linux-headers-3.4.0-2-linaro-llt-omap deb devel optional
+ linux-image-3.4.0-2-linaro-llt-omap deb kernel optional
+ linux-image-3.4.0-2-linaro-llt-omap-dbgsym deb devel optional
+ linux-image-extra-3.4.0-2-linaro-llt-omap deb kernel optional
+ linux-linaro-tools-3.4.0-2-linaro-llt-omap deb devel optional
+Checksums-Sha1: 748f5d1e34f7f4b0995606c3f0cd87343cf0ad2a 104283813 linux-linaro-llt-omap-3.4_3.4.0-2.2~ci+130202014720.tar.gz
+Checksums-Sha256: 7340c08c534edeb579149c1ccf6794384ade44f01c9f2e721146b17485b053fb 104283813 linux-linaro-llt-omap-3.4_3.4.0-2.2~ci+130202014720.tar.gz
+
+Package: linux-meta-linaro-vexpress
+Binary: linux-headers-linaro-vexpress, linux-image-linaro-vexpress, linux-tools-linaro-vexpress
+Version: 3.9.0.1.1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Architecture: armhf
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-meta-linaro-vexpress
+Files:
+ 5e9d42206aff47a68984d12292a3f148 3427 linux-meta-linaro-vexpress_3.9.0.1.1.tar.gz
+ c1ad7d4812014c2478d9a0864cc1e14e 1265 linux-meta-linaro-vexpress_3.9.0.1.1.dsc
+Vcs-Git: http://git.linaro.org/git-ro/ubuntu/linux-meta-linaro.git
+Package-List: linux-headers-linaro-vexpress deb devel optional
+ linux-image-linaro-vexpress deb metapackages optional
+ linux-tools-linaro-vexpress deb metapackages optional
+Checksums-Sha1: bd017fb4221ee51d9dee7086d4fe66892e7ea58d 3427 linux-meta-linaro-vexpress_3.9.0.1.1.tar.gz
+Checksums-Sha256: 84a8d819c05cced6200b41400dd3ee325ad57eb3e1187f9dc5ef5ae53a1e2c57 3427 linux-meta-linaro-vexpress_3.9.0.1.1.tar.gz
+
+Package: linux-meta-linaro-origen
+Binary: linux-headers-linaro-origen, linux-image-linaro-origen, linux-tools-linaro-origen
+Version: 3.8.0.1.1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Architecture: armhf
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-meta-linaro-origen
+Files:
+ 74469a610fcec2961ad808f50f402257 3396 linux-meta-linaro-origen_3.8.0.1.1.tar.gz
+ af44b3d39b5b597657ec8e8625b19d18 1245 linux-meta-linaro-origen_3.8.0.1.1.dsc
+Vcs-Git: http://git.linaro.org/git-ro/ubuntu/linux-meta-linaro.git
+Package-List: linux-headers-linaro-origen deb devel optional
+ linux-image-linaro-origen deb metapackages optional
+ linux-tools-linaro-origen deb metapackages optional
+Checksums-Sha1: eeea850e6f25bcd554fa829c168d7b46470005da 3396 linux-meta-linaro-origen_3.8.0.1.1.tar.gz
+Checksums-Sha256: e61e07c5886e78395811a38f15272707b3c91056b2f5002350a8314f0010b03e 3396 linux-meta-linaro-origen_3.8.0.1.1.tar.gz
+
+Package: ubuntu-vexpress-extras-config
+Binary: ubuntu-vexpress-extras-config
+Version: 0.4
+Section: utils
+Maintainer: Linaro Developers <linaro-dev@lists.linaro.org>
+Build-Depends: debhelper (>= 9)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/main/u/ubuntu-vexpress-extras-config
+Files:
+ ceb53d7ea7af5c5e39902f0a278e2ab9 2698 ubuntu-vexpress-extras-config_0.4.tar.gz
+ 8a54e8a3fd8f4895a80ad9794db52e57 1169 ubuntu-vexpress-extras-config_0.4.dsc
+Checksums-Sha1: d8a7dde75d6fb645070689b14d85daee94bbaff5 2698 ubuntu-vexpress-extras-config_0.4.tar.gz
+Package-List: ubuntu-vexpress-extras-config deb utils extra
+Checksums-Sha256: 8c232a4595a7e22ed51d62ca5154c6f803f9674efead955179af83def1bd66a8 2698 ubuntu-vexpress-extras-config_0.4.tar.gz
+
+Package: edk2-uefi
+Binary: uefi-image-arndale, uefi-image-origen, uefi-image-panda, uefi-image-vexpress
+Version: 1:0.1+git15+20130419+09259ca-0linaro1
+Section: admin
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: debhelper (>= 8.0.0), python, uuid-dev
+Architecture: armhf
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/e/edk2-uefi
+Files:
+ bc520ba8fc3e05d2a7c223344dca6f7f 4006892 edk2-uefi_0.1+git15+20130419+09259ca.orig.tar.bz2
+ 434605a1b01cb82e84a2f3228de9d09f 3405 edk2-uefi_0.1+git15+20130419+09259ca-0linaro1.debian.tar.gz
+ 3d70b1f3cd94c08c3adb50f0121990f8 1549 edk2-uefi_0.1+git15+20130419+09259ca-0linaro1.dsc
+Checksums-Sha1: f8d3b49a77725753455df4559282f78ea1a94fd8 4006892 edk2-uefi_0.1+git15+20130419+09259ca.orig.tar.bz2
+ f6ceb74b93bb71a8c71551da8174c47ba9776cf0 3405 edk2-uefi_0.1+git15+20130419+09259ca-0linaro1.debian.tar.gz
+Package-List: uefi-image-arndale deb admin extra
+ uefi-image-origen deb admin extra
+ uefi-image-panda deb admin extra
+ uefi-image-vexpress deb admin extra
+Checksums-Sha256: 1b3827b4f128e5de62282375566b2265afbeb128a9bd9ff722c9760f0b7a772f 4006892 edk2-uefi_0.1+git15+20130419+09259ca.orig.tar.bz2
+ 84aa6397c098434dbeab2540f6501ef75ca8f8b456cd0d6a124727f886ea2e08 3405 edk2-uefi_0.1+git15+20130419+09259ca-0linaro1.debian.tar.gz
+
+Package: sched-tests
+Binary: sched-tests
+Version: 0.2~ppa1
+Section: misc
+Maintainer: Riku Voipio <riku.voipio@linaro.org>
+Build-Depends: debhelper (>= 8.0.0)
+Architecture: any
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/main/s/sched-tests
+Files:
+ 74c51f480071bef2857427814064badb 19285 sched-tests_0.2~ppa1.tar.gz
+ ffce2a1cb1a8563c0229f33f17082591 767 sched-tests_0.2~ppa1.dsc
+Checksums-Sha1: 95f8b843d4ffe635d889d5a38a6e31f67465ab8c 19285 sched-tests_0.2~ppa1.tar.gz
+Package-List: sched-tests deb misc extra
+Checksums-Sha256: 3c9b525164268f7015ae3388d1fc88561fef0e8c4504082cda24425245587b80 19285 sched-tests_0.2~ppa1.tar.gz
+
+Package: waffle
+Binary: waffle
+Version: 1.2.2-1~tag2
+Section: libs
+Maintainer: Tom Gall <tom.gall@linaro.org>
+Build-Depends: debhelper (>= 8.0.0), cmake, libgles2-mesa-dev, pkg-config
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/w/waffle
+Files:
+ 0a7a49676f439e059462e1cfb4e610b9 160462 waffle_1.2.2.orig.tar.gz
+ 89f646c09360162d1a446eade44e0bcd 3087 waffle_1.2.2-1~tag2.debian.tar.gz
+ d10b65b37d04c78866dc3c402f1ae214 1529 waffle_1.2.2-1~tag2.dsc
+Checksums-Sha1: ebbaf014a192eb4d23f77238fc2a9752dd41039e 160462 waffle_1.2.2.orig.tar.gz
+ 83073ad3b4c529387c348d7207b281ac93ddd7b3 3087 waffle_1.2.2-1~tag2.debian.tar.gz
+Package-List: waffle deb libs extra
+Vcs-Git: git://people.freedesktop.org/~chadversary/waffle
+Vcs-Browser: http://cgit.freedesktop.org/~chadversary/waffle
+Homepage: http://people.freedesktop.org/~chadversary/waffle/
+Checksums-Sha256: 6c317c6fe2ef350d5d79cf37b186a404e3aec639aa17f86a600ee96602290c9b 160462 waffle_1.2.2.orig.tar.gz
+ 5c3f685b14ddddb0122aa2220cb828caaa9c911b52e75ae6e0a1cc1799cf640d 3087 waffle_1.2.2-1~tag2.debian.tar.gz
+
+Package: ti-omap-ehci
+Binary: ti-omap-ehci
+Version: 0.0~20121108-0ubuntu1~linaro1
+Section: misc
+Maintainer: Linaro Maintainers <linaro-dev@lists.linaro.org>
+Build-Depends: debhelper (>= 7.0.50~)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 1.0
+Directory: pool/main/t/ti-omap-ehci
+Files:
+ 494a916634ec8f3891dd154d4c0baaff 1536 ti-omap-ehci_0.0~20121108-0ubuntu1~linaro1.tar.gz
+ 7101aff65672d80d30861b902847708f 997 ti-omap-ehci_0.0~20121108-0ubuntu1~linaro1.dsc
+Checksums-Sha1: c89a02cdaa93dd08a4f65fb3f0a08ffa65942693 1536 ti-omap-ehci_0.0~20121108-0ubuntu1~linaro1.tar.gz
+Package-List: ti-omap-ehci deb misc optional
+Checksums-Sha256: 318593343713805edb20799c68949bb494171ca5ee8b94cb4e48497381fe8b7e 1536 ti-omap-ehci_0.0~20121108-0ubuntu1~linaro1.tar.gz
+
+Package: linaro-grub
+Binary: grub-arm
+Version: 2.00+bzr4618+20130322-0linaro1
+Section: admin
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: autoconf, autogen, automake, bison, debhelper (>= 8.0.0), flex, python
+Architecture: armhf
+Standards-Version: 3.9.2
+Format: 3.0 (quilt)
+Directory: pool/main/l/linaro-grub
+Files:
+ 5c4eb69a6e8c1747e00ff3fdd4f424a8 4478207 linaro-grub_2.00+bzr4618+20130322.orig.tar.bz2
+ e54537e817f900356dc708e49f76ffbc 2425 linaro-grub_2.00+bzr4618+20130322-0linaro1.debian.tar.gz
+ 61d4a50a7dc1b5d665f21f79c9bf8786 1423 linaro-grub_2.00+bzr4618+20130322-0linaro1.dsc
+Checksums-Sha1: 4e5b1a72b3223a79c6ef2dbf6b5b6fa19962583e 4478207 linaro-grub_2.00+bzr4618+20130322.orig.tar.bz2
+ 5186d9be333ae4ed189ea982d0c02f0089f1d7e7 2425 linaro-grub_2.00+bzr4618+20130322-0linaro1.debian.tar.gz
+Package-List: grub-arm deb admin extra
+Vcs-Bzr: lp:~leif-lindholm/linaro-grub/arm-uboot
+Checksums-Sha256: 86e8f7462ce1be6d0b8248cf62443ea68345f6b6cffa3c60390fd35379e997c2 4478207 linaro-grub_2.00+bzr4618+20130322.orig.tar.bz2
+ 211c521651f7aea59d36446f3d75bf795c5db98154eec311f63b8ea90669f336 2425 linaro-grub_2.00+bzr4618+20130322-0linaro1.debian.tar.gz
+
+Package: linux-linaro-u8500-3.7
+Binary: linux-linaro-u8500-3.7-headers-3.7.0-1, linux-linaro-tools-3.7.0-1-linaro-u8500, linux-image-3.7.0-1-linaro-u8500, linux-image-extra-3.7.0-1-linaro-u8500, linux-headers-3.7.0-1-linaro-u8500, linux-image-3.7.0-1-linaro-u8500-dbgsym, kernel-image-3.7.0-1-linaro-u8500-di
+Version: 3.7.0-1.1~ci+130118092324
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-u8500-3.7
+Files:
+ 949516b401567584dde17bd1f26aa7bb 111833315 linux-linaro-u8500-3.7_3.7.0-1.1~ci+130118092324.tar.gz
+ 9196b3776ae1d1936aefc6698971783c 2338 linux-linaro-u8500-3.7_3.7.0-1.1~ci+130118092324.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-u8500-3.7_3.7.0-1.1--ci+130118092324
+Package-List: kernel-image-3.7.0-1-linaro-u8500-di udeb debian-installer extra
+ linux-headers-3.7.0-1-linaro-u8500 deb devel optional
+ linux-image-3.7.0-1-linaro-u8500 deb kernel optional
+ linux-image-3.7.0-1-linaro-u8500-dbgsym deb devel optional
+ linux-image-extra-3.7.0-1-linaro-u8500 deb kernel optional
+ linux-linaro-tools-3.7.0-1-linaro-u8500 deb devel optional
+ linux-linaro-u8500-3.7-headers-3.7.0-1 deb devel optional
+Checksums-Sha1: 5daa262e8c838967ef0ae4903d743d17e5145392 111833315 linux-linaro-u8500-3.7_3.7.0-1.1~ci+130118092324.tar.gz
+Checksums-Sha256: 9b69c4ffa11cd6f3a7bdc33e6b67c9b279a76a3c9f8580b05c928d356677546f 111833315 linux-linaro-u8500-3.7_3.7.0-1.1~ci+130118092324.tar.gz
+
+Package: linux-linaro-vexpress-3.7
+Binary: linux-linaro-vexpress-3.7-headers-3.7.0-1, linux-linaro-tools-3.7.0-1-linaro-vexpress, linux-image-3.7.0-1-linaro-vexpress, linux-image-extra-3.7.0-1-linaro-vexpress, linux-headers-3.7.0-1-linaro-vexpress, linux-image-3.7.0-1-linaro-vexpress-dbgsym, kernel-image-3.7.0-1-linaro-vexpress-di
+Version: 3.7.0-1.1~ci+130118091958
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-vexpress-3.7
+Files:
+ 350383f5f036c2f722acf4b6a3395f7b 111728776 linux-linaro-vexpress-3.7_3.7.0-1.1~ci+130118091958.tar.gz
+ 5e6b76f32b75508c6afc2f9aec76a532 2395 linux-linaro-vexpress-3.7_3.7.0-1.1~ci+130118091958.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-vexpress-3.7_3.7.0-1.1--ci+130118091958
+Package-List: kernel-image-3.7.0-1-linaro-vexpress-di udeb debian-installer extra
+ linux-headers-3.7.0-1-linaro-vexpress deb devel optional
+ linux-image-3.7.0-1-linaro-vexpress deb kernel optional
+ linux-image-3.7.0-1-linaro-vexpress-dbgsym deb devel optional
+ linux-image-extra-3.7.0-1-linaro-vexpress deb kernel optional
+ linux-linaro-tools-3.7.0-1-linaro-vexpress deb devel optional
+ linux-linaro-vexpress-3.7-headers-3.7.0-1 deb devel optional
+Checksums-Sha1: a9312f1c37eb322317805aeb676f368e7c0d281c 111728776 linux-linaro-vexpress-3.7_3.7.0-1.1~ci+130118091958.tar.gz
+Checksums-Sha256: ec494d08b8e11619ab606423919d3cfe7afa1f4b5079354d3f73e69478f2408d 111728776 linux-linaro-vexpress-3.7_3.7.0-1.1~ci+130118091958.tar.gz
+
+Package: linux-linaro-lt-vexpress-3.7
+Binary: linux-linaro-lt-vexpress-3.7-headers-3.7.0-1, linux-linaro-tools-3.7.0-1-linaro-lt-vexpress, linux-image-3.7.0-1-linaro-lt-vexpress, linux-image-extra-3.7.0-1-linaro-lt-vexpress, linux-headers-3.7.0-1-linaro-lt-vexpress, linux-image-3.7.0-1-linaro-lt-vexpress-dbgsym, kernel-image-3.7.0-1-linaro-lt-vexpress-di
+Version: 3.7.0-1.1~ci+130118091309
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-lt-vexpress-3.7
+Files:
+ 13fe7c55f51191435a5f08af6be4b9b3 110700709 linux-linaro-lt-vexpress-3.7_3.7.0-1.1~ci+130118091309.tar.gz
+ bcd5caf135636c805591bfbf0f5a100c 2452 linux-linaro-lt-vexpress-3.7_3.7.0-1.1~ci+130118091309.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-lt-vexpress-3.7_3.7.0-1.1--ci+130118091309
+Package-List: kernel-image-3.7.0-1-linaro-lt-vexpress-di udeb debian-installer extra
+ linux-headers-3.7.0-1-linaro-lt-vexpress deb devel optional
+ linux-image-3.7.0-1-linaro-lt-vexpress deb kernel optional
+ linux-image-3.7.0-1-linaro-lt-vexpress-dbgsym deb devel optional
+ linux-image-extra-3.7.0-1-linaro-lt-vexpress deb kernel optional
+ linux-linaro-lt-vexpress-3.7-headers-3.7.0-1 deb devel optional
+ linux-linaro-tools-3.7.0-1-linaro-lt-vexpress deb devel optional
+Checksums-Sha1: 0f82d8ccdae3ed992a0d5049b85f25169e92a2fc 110700709 linux-linaro-lt-vexpress-3.7_3.7.0-1.1~ci+130118091309.tar.gz
+Checksums-Sha256: cddc98b3f1387f3255340fab75c8e2d010af7d0d09da1538fe8c0dc90a86b9de 110700709 linux-linaro-lt-vexpress-3.7_3.7.0-1.1~ci+130118091309.tar.gz
+
+Package: linux-linaro-origen-3.7
+Binary: linux-linaro-origen-3.7-headers-3.7.0-1, linux-linaro-tools-3.7.0-1-linaro-origen, linux-image-3.7.0-1-linaro-origen, linux-image-extra-3.7.0-1-linaro-origen, linux-headers-3.7.0-1-linaro-origen, linux-image-3.7.0-1-linaro-origen-dbgsym, kernel-image-3.7.0-1-linaro-origen-di
+Version: 3.7.0-1.1~ci+130118091510
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-origen-3.7
+Files:
+ 4c0876b0b7648fb0cddf93e64d77dbc3 111797817 linux-linaro-origen-3.7_3.7.0-1.1~ci+130118091510.tar.gz
+ e9d61f5640dbe5ede7489ab72650dea6 2357 linux-linaro-origen-3.7_3.7.0-1.1~ci+130118091510.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-origen-3.7_3.7.0-1.1--ci+130118091510
+Package-List: kernel-image-3.7.0-1-linaro-origen-di udeb debian-installer extra
+ linux-headers-3.7.0-1-linaro-origen deb devel optional
+ linux-image-3.7.0-1-linaro-origen deb kernel optional
+ linux-image-3.7.0-1-linaro-origen-dbgsym deb devel optional
+ linux-image-extra-3.7.0-1-linaro-origen deb kernel optional
+ linux-linaro-origen-3.7-headers-3.7.0-1 deb devel optional
+ linux-linaro-tools-3.7.0-1-linaro-origen deb devel optional
+Checksums-Sha1: 38ec9a26fbc23a6b7600496428299b1226d2f285 111797817 linux-linaro-origen-3.7_3.7.0-1.1~ci+130118091510.tar.gz
+Checksums-Sha256: c591d1bb48a662c9fc4e093abd6f5e0e4992aa1010c6c8058f34f5f7e326990c 111797817 linux-linaro-origen-3.7_3.7.0-1.1~ci+130118091510.tar.gz
+
+Package: linux-meta-linaro-u8500
+Binary: linux-headers-linaro-u8500, linux-image-linaro-u8500, linux-tools-linaro-u8500
+Version: 3.9.0.1.1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Architecture: armhf
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-meta-linaro-u8500
+Files:
+ 07d875856b7449a69412ea3929229250 3394 linux-meta-linaro-u8500_3.9.0.1.1.tar.gz
+ 59efdc054fbbce362edfc595640ff970 1235 linux-meta-linaro-u8500_3.9.0.1.1.dsc
+Vcs-Git: http://git.linaro.org/git-ro/ubuntu/linux-meta-linaro.git
+Package-List: linux-headers-linaro-u8500 deb devel optional
+ linux-image-linaro-u8500 deb metapackages optional
+ linux-tools-linaro-u8500 deb metapackages optional
+Checksums-Sha1: 57c47cd6e51383bddcb3cabeb921144d53a7468c 3394 linux-meta-linaro-u8500_3.9.0.1.1.tar.gz
+Checksums-Sha256: 4b3ef2e19489f3bd405bf5773e3be55466c51d2ac1ca5e61d3b8b78875a7ab2d 3394 linux-meta-linaro-u8500_3.9.0.1.1.tar.gz
+
+Package: linux-meta-linaro-llt-omap
+Binary: linux-headers-linaro-llt-omap, linux-image-linaro-llt-omap, linux-tools-linaro-llt-omap
+Version: 3.4.0.2.1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Architecture: armhf
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-meta-linaro-llt-omap
+Files:
+ 032c1d6173a8106a60de57af86fc7efa 3381 linux-meta-linaro-llt-omap_3.4.0.2.1.tar.gz
+ 36796ffe7fda66d6f8973be2a2a96997 1265 linux-meta-linaro-llt-omap_3.4.0.2.1.dsc
+Vcs-Git: http://git.linaro.org/git-ro/ubuntu/linux-meta-linaro.git
+Package-List: linux-headers-linaro-llt-omap deb devel optional
+ linux-image-linaro-llt-omap deb metapackages optional
+ linux-tools-linaro-llt-omap deb metapackages optional
+Checksums-Sha1: ad007f012561c2db81ca71b1613a705b7e51ed88 3381 linux-meta-linaro-llt-omap_3.4.0.2.1.tar.gz
+Checksums-Sha256: 023b7659e21d169e7d5132f45459ead0a671fe453757b0d97541805281a52376 3381 linux-meta-linaro-llt-omap_3.4.0.2.1.tar.gz
+
+Package: linaro-powertop
+Binary: powertop
+Version: 2.2-2012.12-0ubuntu1~linaro1
+Section: utils
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Build-Depends: autopoint, cdbs, debhelper (>= 9), dh-autoreconf, libncurses5-dev, libncursesw5-dev, libnl-3-dev, libnl-genl-3-dev, libpci-dev, pkg-config
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/l/linaro-powertop
+Files:
+ 8c1c25cb8291fde8d6c0baf93d57afcd 166502 linaro-powertop_2.2-2012.12.orig.tar.bz2
+ c204821187b0eb5edc51ed2fa737fc81 7403 linaro-powertop_2.2-2012.12-0ubuntu1~linaro1.debian.tar.gz
+ 638624ce53b9bba56b6150183ba0af5d 1578 linaro-powertop_2.2-2012.12-0ubuntu1~linaro1.dsc
+Uploaders: Jose Luis Rivas <ghostbar38@gmail.com>
+Checksums-Sha1: bf8b746b8a5f4ad0c21fcb7219955ae91c23e48e 166502 linaro-powertop_2.2-2012.12.orig.tar.bz2
+ 8efeaeea1ad53a8258b4796a82bb56793a597965 7403 linaro-powertop_2.2-2012.12-0ubuntu1~linaro1.debian.tar.gz
+Package-List: powertop deb utils extra
+Homepage: https://01.org/powertop/
+Checksums-Sha256: b932611a90c476fa754571a97e651b67611bb6dc2e4c6184f2c041d6718ba4c7 166502 linaro-powertop_2.2-2012.12.orig.tar.bz2
+ 15424ffca98411df74ccc62f5c6c4b244e97a93badaa708988ace4ce64bf52ee 7403 linaro-powertop_2.2-2012.12-0ubuntu1~linaro1.debian.tar.gz
+Original-Maintainer: Patrick Winnertz <winnie@debian.org>
+
+Package: linux-meta-linaro-arndale
+Binary: linux-headers-linaro-arndale, linux-image-linaro-arndale, linux-tools-linaro-arndale
+Version: 3.9.0.1.1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Architecture: armhf
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-meta-linaro-arndale
+Files:
+ 06a41948e94c33e5ae5bc4913381768f 3402 linux-meta-linaro-arndale_3.9.0.1.1.tar.gz
+ 9811da6e4f4a401ed8a00f7e8b94d16f 1255 linux-meta-linaro-arndale_3.9.0.1.1.dsc
+Vcs-Git: http://git.linaro.org/git-ro/ubuntu/linux-meta-linaro.git
+Package-List: linux-headers-linaro-arndale deb devel optional
+ linux-image-linaro-arndale deb metapackages optional
+ linux-tools-linaro-arndale deb metapackages optional
+Checksums-Sha1: 2de9744f8154a21e6b2c4790ce3fdbc874962257 3402 linux-meta-linaro-arndale_3.9.0.1.1.tar.gz
+Checksums-Sha256: ad600d08d75de38f13aaa941bb862ecc303c5cbee74a39b10df8101d049c7079 3402 linux-meta-linaro-arndale_3.9.0.1.1.tar.gz
+
+Package: linux-linaro-arndale-3.7
+Binary: linux-linaro-arndale-3.7-headers-3.7.0-1, linux-linaro-tools-3.7.0-1-linaro-arndale, linux-image-3.7.0-1-linaro-arndale, linux-image-extra-3.7.0-1-linaro-arndale, linux-headers-3.7.0-1-linaro-arndale, linux-image-3.7.0-1-linaro-arndale-dbgsym, kernel-image-3.7.0-1-linaro-arndale-di
+Version: 3.7.0-1.1~ci+130118091958
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-arndale-3.7
+Files:
+ d95b4330a3eff3014b0be6140609a5d0 109046225 linux-linaro-arndale-3.7_3.7.0-1.1~ci+130118091958.tar.gz
+ 59577112fd4e9eefb8127eb2a1296782 2376 linux-linaro-arndale-3.7_3.7.0-1.1~ci+130118091958.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-arndale-3.7_3.7.0-1.1--ci+130118091958
+Package-List: kernel-image-3.7.0-1-linaro-arndale-di udeb debian-installer extra
+ linux-headers-3.7.0-1-linaro-arndale deb devel optional
+ linux-image-3.7.0-1-linaro-arndale deb kernel optional
+ linux-image-3.7.0-1-linaro-arndale-dbgsym deb devel optional
+ linux-image-extra-3.7.0-1-linaro-arndale deb kernel optional
+ linux-linaro-arndale-3.7-headers-3.7.0-1 deb devel optional
+ linux-linaro-tools-3.7.0-1-linaro-arndale deb devel optional
+Checksums-Sha1: eb6cecfeb29ea7908e42ea63c77803517eaf2f9b 109046225 linux-linaro-arndale-3.7_3.7.0-1.1~ci+130118091958.tar.gz
+Checksums-Sha256: b409909024d2d0a58aeac249e51e9b58364de1ba403a616da9ef901de2ba2436 109046225 linux-linaro-arndale-3.7_3.7.0-1.1~ci+130118091958.tar.gz
+
+Package: arndale-pre-boot
+Binary: arndale-pre-boot
+Version: 0.0.2.20130101-0ubuntu1~linaro1
+Section: admin
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: debhelper (>= 8.0.0)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/a/arndale-pre-boot
+Files:
+ d82b15ef06b2a9f36b741bb41a306c97 2975 arndale-pre-boot_0.0.2.20130101.orig.tar.bz2
+ bb011edfa2af296317c17c46c1de6f0f 1783 arndale-pre-boot_0.0.2.20130101-0ubuntu1~linaro1.debian.tar.gz
+ fe1839f4a6bffc2f7c9040a28508f846 1347 arndale-pre-boot_0.0.2.20130101-0ubuntu1~linaro1.dsc
+Checksums-Sha1: f22c2980429f55b5d17c44628290884eabed0161 2975 arndale-pre-boot_0.0.2.20130101.orig.tar.bz2
+ 394fa5a88de15226ffc54469acd7cae4074ecefb 1783 arndale-pre-boot_0.0.2.20130101-0ubuntu1~linaro1.debian.tar.gz
+Package-List: arndale-pre-boot deb admin extra
+Checksums-Sha256: 08c860ce57e77bbd3bbf397c049850f54389a661857f2600013f557c6b3bdb36 2975 arndale-pre-boot_0.0.2.20130101.orig.tar.bz2
+ 80d9caae76ee64cbc190b0bf6feda7a03f0e707de6d812f1cba0ef9bf84fc855 1783 arndale-pre-boot_0.0.2.20130101-0ubuntu1~linaro1.debian.tar.gz
+
+Package: linux-linaro-vexpress-3.8
+Binary: linux-linaro-vexpress-3.8-headers-3.8.0-1, linux-linaro-tools-3.8.0-1-linaro-vexpress, linux-image-3.8.0-1-linaro-vexpress, linux-image-extra-3.8.0-1-linaro-vexpress, linux-headers-3.8.0-1-linaro-vexpress, linux-image-3.8.0-1-linaro-vexpress-dbgsym, kernel-image-3.8.0-1-linaro-vexpress-di
+Version: 3.8.0-1.1ubuntu1~ci+130225020935
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-vexpress-3.8
+Files:
+ 23c1e47594615fd1d21fce4d1229d91c 109722606 linux-linaro-vexpress-3.8_3.8.0-1.1ubuntu1~ci+130225020935.tar.gz
+ cab81c3fda091874af58c1b52d23a5c9 2430 linux-linaro-vexpress-3.8_3.8.0-1.1ubuntu1~ci+130225020935.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-vexpress-3.8_3.8.0-1.1ubuntu1--ci+130225020935
+Package-List: kernel-image-3.8.0-1-linaro-vexpress-di udeb debian-installer extra
+ linux-headers-3.8.0-1-linaro-vexpress deb devel optional
+ linux-image-3.8.0-1-linaro-vexpress deb kernel optional
+ linux-image-3.8.0-1-linaro-vexpress-dbgsym deb devel optional
+ linux-image-extra-3.8.0-1-linaro-vexpress deb kernel optional
+ linux-linaro-tools-3.8.0-1-linaro-vexpress deb devel optional
+ linux-linaro-vexpress-3.8-headers-3.8.0-1 deb devel optional
+Checksums-Sha1: 7732eb2f18734cc60bbc5664ea904e45d0511bd1 109722606 linux-linaro-vexpress-3.8_3.8.0-1.1ubuntu1~ci+130225020935.tar.gz
+Checksums-Sha256: 9873fc02d0e263efa62edc111af4a41691655d275a0411c8736c1adbf49f19ad 109722606 linux-linaro-vexpress-3.8_3.8.0-1.1ubuntu1~ci+130225020935.tar.gz
+
+Package: linux-linaro-highbank-3.8
+Binary: linux-linaro-highbank-3.8-headers-3.8.0-1, linux-linaro-tools-3.8.0-1-linaro-highbank, linux-image-3.8.0-1-linaro-highbank, linux-image-extra-3.8.0-1-linaro-highbank, linux-headers-3.8.0-1-linaro-highbank, linux-image-3.8.0-1-linaro-highbank-dbgsym, kernel-image-3.8.0-1-linaro-highbank-di
+Version: 3.8.0-1.1ubuntu1~ci+130225061748
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-highbank-3.8
+Files:
+ f213fe2007b42ff9113989a66d7aabd0 109704952 linux-linaro-highbank-3.8_3.8.0-1.1ubuntu1~ci+130225061748.tar.gz
+ 18467b6c0b90a77743dac5f0b01f0f77 2430 linux-linaro-highbank-3.8_3.8.0-1.1ubuntu1~ci+130225061748.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-highbank-3.8_3.8.0-1.1ubuntu1--ci+130225061748
+Package-List: kernel-image-3.8.0-1-linaro-highbank-di udeb debian-installer extra
+ linux-headers-3.8.0-1-linaro-highbank deb devel optional
+ linux-image-3.8.0-1-linaro-highbank deb kernel optional
+ linux-image-3.8.0-1-linaro-highbank-dbgsym deb devel optional
+ linux-image-extra-3.8.0-1-linaro-highbank deb kernel optional
+ linux-linaro-highbank-3.8-headers-3.8.0-1 deb devel optional
+ linux-linaro-tools-3.8.0-1-linaro-highbank deb devel optional
+Checksums-Sha1: 27127258ce1f2f1b2f53ac5f3342fa87860b0aa0 109704952 linux-linaro-highbank-3.8_3.8.0-1.1ubuntu1~ci+130225061748.tar.gz
+Checksums-Sha256: 51428676520dc3a2d65d3ecccab168777204bb631b1ca664a3f9d5ab3d9e7ccc 109704952 linux-linaro-highbank-3.8_3.8.0-1.1ubuntu1~ci+130225061748.tar.gz
+
+Package: linux-linaro-lt-vexpress-3.8
+Binary: linux-linaro-lt-vexpress-3.8-headers-3.8.0-1, linux-linaro-tools-3.8.0-1-linaro-lt-vexpress, linux-image-3.8.0-1-linaro-lt-vexpress, linux-image-extra-3.8.0-1-linaro-lt-vexpress, linux-headers-3.8.0-1-linaro-lt-vexpress, linux-image-3.8.0-1-linaro-lt-vexpress-dbgsym, kernel-image-3.8.0-1-linaro-lt-vexpress-di
+Version: 3.8.0-1.1ubuntu1~ci+130225011935
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-lt-vexpress-3.8
+Files:
+ 31217ec494bb0afb6e39827ef856daf1 108547570 linux-linaro-lt-vexpress-3.8_3.8.0-1.1ubuntu1~ci+130225011935.tar.gz
+ 3a1b0f3edc1080ce1d1e6ed110004292 2487 linux-linaro-lt-vexpress-3.8_3.8.0-1.1ubuntu1~ci+130225011935.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-lt-vexpress-3.8_3.8.0-1.1ubuntu1--ci+130225011935
+Package-List: kernel-image-3.8.0-1-linaro-lt-vexpress-di udeb debian-installer extra
+ linux-headers-3.8.0-1-linaro-lt-vexpress deb devel optional
+ linux-image-3.8.0-1-linaro-lt-vexpress deb kernel optional
+ linux-image-3.8.0-1-linaro-lt-vexpress-dbgsym deb devel optional
+ linux-image-extra-3.8.0-1-linaro-lt-vexpress deb kernel optional
+ linux-linaro-lt-vexpress-3.8-headers-3.8.0-1 deb devel optional
+ linux-linaro-tools-3.8.0-1-linaro-lt-vexpress deb devel optional
+Checksums-Sha1: 3c47a014c68bab2a38cd9b2a1e8354f7cbfbf00d 108547570 linux-linaro-lt-vexpress-3.8_3.8.0-1.1ubuntu1~ci+130225011935.tar.gz
+Checksums-Sha256: b00c63dc96d152b8530d2979629d662ccaa879425fbea9a699c2ac7c41b2cde2 108547570 linux-linaro-lt-vexpress-3.8_3.8.0-1.1ubuntu1~ci+130225011935.tar.gz
+
+Package: linux-linaro-origen-3.8
+Binary: linux-linaro-origen-3.8-headers-3.8.0-1, linux-linaro-tools-3.8.0-1-linaro-origen, linux-image-3.8.0-1-linaro-origen, linux-image-extra-3.8.0-1-linaro-origen, linux-headers-3.8.0-1-linaro-origen, linux-image-3.8.0-1-linaro-origen-dbgsym, kernel-image-3.8.0-1-linaro-origen-di
+Version: 3.8.0-1.1ubuntu1~ci+130222082435
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-origen-3.8
+Files:
+ feab4345253534d8647c5dd7c635a92c 109716624 linux-linaro-origen-3.8_3.8.0-1.1ubuntu1~ci+130222082435.tar.gz
+ 65728b35e32f5909054c7a2f03d6e650 2392 linux-linaro-origen-3.8_3.8.0-1.1ubuntu1~ci+130222082435.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-origen-3.8_3.8.0-1.1ubuntu1--ci+130222082435
+Package-List: kernel-image-3.8.0-1-linaro-origen-di udeb debian-installer extra
+ linux-headers-3.8.0-1-linaro-origen deb devel optional
+ linux-image-3.8.0-1-linaro-origen deb kernel optional
+ linux-image-3.8.0-1-linaro-origen-dbgsym deb devel optional
+ linux-image-extra-3.8.0-1-linaro-origen deb kernel optional
+ linux-linaro-origen-3.8-headers-3.8.0-1 deb devel optional
+ linux-linaro-tools-3.8.0-1-linaro-origen deb devel optional
+Checksums-Sha1: 155f85dd81963e45bddb8dc424e0be008fed848c 109716624 linux-linaro-origen-3.8_3.8.0-1.1ubuntu1~ci+130222082435.tar.gz
+Checksums-Sha256: ef730404af8c89d1ce4d1c60da4561a4ff26c1ee34e4045eff275e6336bc13d2 109716624 linux-linaro-origen-3.8_3.8.0-1.1ubuntu1~ci+130222082435.tar.gz
+
+Package: linux-linaro-arndale-3.8
+Binary: linux-linaro-arndale-3.8-headers-3.8.0-1, linux-linaro-tools-3.8.0-1-linaro-arndale, linux-image-3.8.0-1-linaro-arndale, linux-image-extra-3.8.0-1-linaro-arndale, linux-headers-3.8.0-1-linaro-arndale, linux-image-3.8.0-1-linaro-arndale-dbgsym, kernel-image-3.8.0-1-linaro-arndale-di
+Version: 3.8.0-1.1ubuntu1~ci+130225052351
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-arndale-3.8
+Files:
+ 7826cd85dc034a19a1654d443583a3e2 109716862 linux-linaro-arndale-3.8_3.8.0-1.1ubuntu1~ci+130225052351.tar.gz
+ fa306e4e2606c0665b20e3de1357b31d 2411 linux-linaro-arndale-3.8_3.8.0-1.1ubuntu1~ci+130225052351.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-arndale-3.8_3.8.0-1.1ubuntu1--ci+130225052351
+Package-List: kernel-image-3.8.0-1-linaro-arndale-di udeb debian-installer extra
+ linux-headers-3.8.0-1-linaro-arndale deb devel optional
+ linux-image-3.8.0-1-linaro-arndale deb kernel optional
+ linux-image-3.8.0-1-linaro-arndale-dbgsym deb devel optional
+ linux-image-extra-3.8.0-1-linaro-arndale deb kernel optional
+ linux-linaro-arndale-3.8-headers-3.8.0-1 deb devel optional
+ linux-linaro-tools-3.8.0-1-linaro-arndale deb devel optional
+Checksums-Sha1: 1e3dbe940f11b2ad108638a091e57618ddd465c0 109716862 linux-linaro-arndale-3.8_3.8.0-1.1ubuntu1~ci+130225052351.tar.gz
+Checksums-Sha256: bb717e43408b8771ad2ca1c73cd0db5bd999c23a0f43b363e30a27cd301c877b 109716862 linux-linaro-arndale-3.8_3.8.0-1.1ubuntu1~ci+130225052351.tar.gz
+
+Package: linux-meta-linaro-highbank
+Binary: linux-headers-linaro-highbank, linux-image-linaro-highbank, linux-tools-linaro-highbank
+Version: 3.9.0.1.1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Architecture: armhf
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-meta-linaro-highbank
+Files:
+ 138f7c63d3352d52482dacb8d3c0c63a 3415 linux-meta-linaro-highbank_3.9.0.1.1.tar.gz
+ 4e5df9b26f4caef3b6bfb22d0516a9d6 1265 linux-meta-linaro-highbank_3.9.0.1.1.dsc
+Vcs-Git: http://git.linaro.org/git-ro/ubuntu/linux-meta-linaro.git
+Package-List: linux-headers-linaro-highbank deb devel optional
+ linux-image-linaro-highbank deb metapackages optional
+ linux-tools-linaro-highbank deb metapackages optional
+Checksums-Sha1: 641ddd1d244bd2d5485636cb2a04fdeaee5126ea 3415 linux-meta-linaro-highbank_3.9.0.1.1.tar.gz
+Checksums-Sha256: 78467f2d061e60fc11d74c6cd2efef1a82da736b1e1a87d9ffc088b05dc251af 3415 linux-meta-linaro-highbank_3.9.0.1.1.tar.gz
+
+Package: linux-linaro-u8500-3.8
+Binary: linux-linaro-u8500-3.8-headers-3.8.0-1, linux-linaro-tools-3.8.0-1-linaro-u8500, linux-image-3.8.0-1-linaro-u8500, linux-image-extra-3.8.0-1-linaro-u8500, linux-headers-3.8.0-1-linaro-u8500, linux-image-3.8.0-1-linaro-u8500-dbgsym, kernel-image-3.8.0-1-linaro-u8500-di
+Version: 3.8.0-1.1ubuntu1~ci+130225033828
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-u8500-3.8
+Files:
+ e21d68fe6f06c94537327e89d46012b7 109711885 linux-linaro-u8500-3.8_3.8.0-1.1ubuntu1~ci+130225033828.tar.gz
+ 52fc9d4f25fc4239ea5fc96698d22559 2373 linux-linaro-u8500-3.8_3.8.0-1.1ubuntu1~ci+130225033828.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-u8500-3.8_3.8.0-1.1ubuntu1--ci+130225033828
+Package-List: kernel-image-3.8.0-1-linaro-u8500-di udeb debian-installer extra
+ linux-headers-3.8.0-1-linaro-u8500 deb devel optional
+ linux-image-3.8.0-1-linaro-u8500 deb kernel optional
+ linux-image-3.8.0-1-linaro-u8500-dbgsym deb devel optional
+ linux-image-extra-3.8.0-1-linaro-u8500 deb kernel optional
+ linux-linaro-tools-3.8.0-1-linaro-u8500 deb devel optional
+ linux-linaro-u8500-3.8-headers-3.8.0-1 deb devel optional
+Checksums-Sha1: ff2da0ad90f236398f739506916f4d611465b942 109711885 linux-linaro-u8500-3.8_3.8.0-1.1ubuntu1~ci+130225033828.tar.gz
+Checksums-Sha256: de2c802d8daa884b1cc7fc1e80086615e8f0c06de775d3b73e166aee8b1fd320 109711885 linux-linaro-u8500-3.8_3.8.0-1.1ubuntu1~ci+130225033828.tar.gz
+
+Package: arndale-ethernet
+Binary: arndale-ethernet
+Version: 0.1
+Section: net
+Maintainer: Linaro Developers <linaro-dev@lists.linaro.org>
+Build-Depends: debhelper (>= 8.0.0)
+Architecture: all
+Standards-Version: 3.9.3
+Format: 3.0 (native)
+Directory: pool/main/a/arndale-ethernet
+Files:
+ 9d018f223b687a51e05b04ed4e6e5dc7 1471 arndale-ethernet_0.1.tar.gz
+ 11a25dca3f9ce79bd7997f9bd0a9845a 919 arndale-ethernet_0.1.dsc
+Checksums-Sha1: f02ab89cfcdbfa4f72b6fe2757ad442832c1ece5 1471 arndale-ethernet_0.1.tar.gz
+Package-List: arndale-ethernet deb net extra
+Checksums-Sha256: 88375010e8aca5d6bf248d8ccfe3cf5625b2e029936e723770bc7457f82e8c57 1471 arndale-ethernet_0.1.tar.gz
+
+Package: linux-linaro-omap-3.8
+Binary: linux-linaro-omap-3.8-headers-3.8.0-1, linux-linaro-tools-3.8.0-1-linaro-omap, linux-image-3.8.0-1-linaro-omap, linux-image-extra-3.8.0-1-linaro-omap, linux-headers-3.8.0-1-linaro-omap, linux-image-3.8.0-1-linaro-omap-dbgsym, kernel-image-3.8.0-1-linaro-omap-di
+Version: 3.8.0-1.1ubuntu1~ci+130225001457
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386]
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-omap-3.8
+Files:
+ d5862407e85c1d833c7af6d6c6ba4e24 109719800 linux-linaro-omap-3.8_3.8.0-1.1ubuntu1~ci+130225001457.tar.gz
+ 90a14cf091c21b9bb4488daf6fc3f09d 2354 linux-linaro-omap-3.8_3.8.0-1.1ubuntu1~ci+130225001457.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-omap-3.8_3.8.0-1.1ubuntu1--ci+130225001457
+Package-List: kernel-image-3.8.0-1-linaro-omap-di udeb debian-installer extra
+ linux-headers-3.8.0-1-linaro-omap deb devel optional
+ linux-image-3.8.0-1-linaro-omap deb kernel optional
+ linux-image-3.8.0-1-linaro-omap-dbgsym deb devel optional
+ linux-image-extra-3.8.0-1-linaro-omap deb kernel optional
+ linux-linaro-omap-3.8-headers-3.8.0-1 deb devel optional
+ linux-linaro-tools-3.8.0-1-linaro-omap deb devel optional
+Checksums-Sha1: 0090f99f0021b9ea8ba7909dbaf1ec2f8e3acb38 109719800 linux-linaro-omap-3.8_3.8.0-1.1ubuntu1~ci+130225001457.tar.gz
+Checksums-Sha256: 5bfa22078c2ba753ae2dd66e42787df9f8973432a08b99a18882849fad7da097 109719800 linux-linaro-omap-3.8_3.8.0-1.1ubuntu1~ci+130225001457.tar.gz
+
+Package: linux-meta-linaro-omap
+Binary: linux-headers-linaro-omap, linux-image-linaro-omap, linux-tools-linaro-omap
+Version: 3.9.0.1.1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: dpkg (>= 1.13.19), debhelper (>= 5), gawk
+Architecture: armhf
+Standards-Version: 3.6.1
+Format: 1.0
+Directory: pool/main/l/linux-meta-linaro-omap
+Files:
+ d85e1913850305e522d4fc7151f01293 3410 linux-meta-linaro-omap_3.9.0.1.1.tar.gz
+ 84471e727afdf6fc77f0fd33710f5846 1225 linux-meta-linaro-omap_3.9.0.1.1.dsc
+Vcs-Git: http://git.linaro.org/git-ro/ubuntu/linux-meta-linaro.git
+Package-List: linux-headers-linaro-omap deb devel optional
+ linux-image-linaro-omap deb metapackages optional
+ linux-tools-linaro-omap deb metapackages optional
+Checksums-Sha1: 4e9910a5c6087bc928f93ccca685d6ffae2323aa 3410 linux-meta-linaro-omap_3.9.0.1.1.tar.gz
+Checksums-Sha256: bf0c8861b3de325dcaec64712e507358042e86bc4a5c4c138a22ac33a1e23e0b 3410 linux-meta-linaro-omap_3.9.0.1.1.tar.gz
+
+Package: acpi-abat
+Binary: acpi-abat
+Version: 0.2-0linaro1
+Section: devel
+Maintainer: Linaro Packagers <linaro-pkg@lists.launchpad.net>
+Build-Depends: debhelper (>= 8)
+Architecture: any
+Standards-Version: 3.9.3
+Format: 3.0 (quilt)
+Directory: pool/main/a/acpi-abat
+Files:
+ dc13754193a1f1cbbc3be365fa74a834 15971 acpi-abat_0.2.orig.tar.gz
+ bbdeafe6f2e994a8a41bb8791660f6e9 2069 acpi-abat_0.2-0linaro1.debian.tar.gz
+ d85c8d5f36e163b4d7e6f98bb7895efd 1281 acpi-abat_0.2-0linaro1.dsc
+Uploaders: Fathi Boudra <fathi.boudra@linaro.org>
+Checksums-Sha1: 943e48786776c6031b78ee9c7bdd278b7b33abb8 15971 acpi-abat_0.2.orig.tar.gz
+ aff311109830305a10864dc0c08925bc456458f6 2069 acpi-abat_0.2-0linaro1.debian.tar.gz
+Package-List: acpi-abat deb devel extra
+Homepage: https://lesswatts.org/projects/acpi/utilities.php
+Checksums-Sha256: dc6fa1ac06a369f5e33e86d05d50e6dfe0789af5fc24d7ba3ac45d2bd2a0678e 15971 acpi-abat_0.2.orig.tar.gz
+ 506eb393e404e8738aa5912168bc0707f9a50e300d8505e1da7234b264c2e94b 2069 acpi-abat_0.2-0linaro1.debian.tar.gz
+
+Package: linux-linaro-vexpress-3.9
+Binary: linux-linaro-vexpress-3.9-headers-3.9.0-1, linux-linaro-tools-3.9.0-1-linaro-vexpress, linux-image-3.9.0-1-linaro-vexpress, linux-image-extra-3.9.0-1-linaro-vexpress, linux-headers-3.9.0-1-linaro-vexpress, linux-image-3.9.0-1-linaro-vexpress-dbgsym, kernel-image-3.9.0-1-linaro-vexpress-di
+Version: 3.9.0-1.1ubuntu1~ci+130417135721
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386], bc
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-vexpress-3.9
+Files:
+ c315e9e66caf96edd18446eb43cc3b1c 110473793 linux-linaro-vexpress-3.9_3.9.0-1.1ubuntu1~ci+130417135721.tar.gz
+ da36a5d8b1b80ce25334674afc3a9342 2434 linux-linaro-vexpress-3.9_3.9.0-1.1ubuntu1~ci+130417135721.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-vexpress-3.9_3.9.0-1.1ubuntu1--ci+130417135721
+Package-List: kernel-image-3.9.0-1-linaro-vexpress-di udeb debian-installer extra
+ linux-headers-3.9.0-1-linaro-vexpress deb devel optional
+ linux-image-3.9.0-1-linaro-vexpress deb kernel optional
+ linux-image-3.9.0-1-linaro-vexpress-dbgsym deb devel optional
+ linux-image-extra-3.9.0-1-linaro-vexpress deb kernel optional
+ linux-linaro-tools-3.9.0-1-linaro-vexpress deb devel optional
+ linux-linaro-vexpress-3.9-headers-3.9.0-1 deb devel optional
+Checksums-Sha1: ba04529fac04ce61fabd29dd30764cc50e634d1a 110473793 linux-linaro-vexpress-3.9_3.9.0-1.1ubuntu1~ci+130417135721.tar.gz
+Checksums-Sha256: 7b0533f8c7f123be49ddfc9ea4cec499818f0a11b56ef951c7a70fe94497b8d1 110473793 linux-linaro-vexpress-3.9_3.9.0-1.1ubuntu1~ci+130417135721.tar.gz
+
+Package: linux-linaro-highbank-3.9
+Binary: linux-linaro-highbank-3.9-headers-3.9.0-1, linux-linaro-tools-3.9.0-1-linaro-highbank, linux-image-3.9.0-1-linaro-highbank, linux-image-extra-3.9.0-1-linaro-highbank, linux-headers-3.9.0-1-linaro-highbank, linux-image-3.9.0-1-linaro-highbank-dbgsym, kernel-image-3.9.0-1-linaro-highbank-di
+Version: 3.9.0-1.1ubuntu1~ci+130417160508
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386], bc
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-highbank-3.9
+Files:
+ 8d84c783b40a7bc2b6557faf3b8fb7c7 110478047 linux-linaro-highbank-3.9_3.9.0-1.1ubuntu1~ci+130417160508.tar.gz
+ e7b2258792c5e7e0de0a59f6673ba553 2434 linux-linaro-highbank-3.9_3.9.0-1.1ubuntu1~ci+130417160508.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-highbank-3.9_3.9.0-1.1ubuntu1--ci+130417160508
+Package-List: kernel-image-3.9.0-1-linaro-highbank-di udeb debian-installer extra
+ linux-headers-3.9.0-1-linaro-highbank deb devel optional
+ linux-image-3.9.0-1-linaro-highbank deb kernel optional
+ linux-image-3.9.0-1-linaro-highbank-dbgsym deb devel optional
+ linux-image-extra-3.9.0-1-linaro-highbank deb kernel optional
+ linux-linaro-highbank-3.9-headers-3.9.0-1 deb devel optional
+ linux-linaro-tools-3.9.0-1-linaro-highbank deb devel optional
+Checksums-Sha1: ceb9cbba6fb52e859356c807eb19fee1ee792051 110478047 linux-linaro-highbank-3.9_3.9.0-1.1ubuntu1~ci+130417160508.tar.gz
+Checksums-Sha256: 3d9c61148986ab395dee102796324fb22cd8dc544d5daf0d5725b9592553f055 110478047 linux-linaro-highbank-3.9_3.9.0-1.1ubuntu1~ci+130417160508.tar.gz
+
+Package: linux-linaro-omap-3.9
+Binary: linux-linaro-omap-3.9-headers-3.9.0-1, linux-linaro-tools-3.9.0-1-linaro-omap, linux-image-3.9.0-1-linaro-omap, linux-image-extra-3.9.0-1-linaro-omap, linux-headers-3.9.0-1-linaro-omap, linux-image-3.9.0-1-linaro-omap-dbgsym, kernel-image-3.9.0-1-linaro-omap-di
+Version: 3.9.0-1.1ubuntu1~ci+130419084740
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386], bc
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-omap-3.9
+Files:
+ 7517557abf8c29f4d1f1648f0fab66b6 110475255 linux-linaro-omap-3.9_3.9.0-1.1ubuntu1~ci+130419084740.tar.gz
+ 95784358e47cb3b85ba8f99ff7c2e76e 2358 linux-linaro-omap-3.9_3.9.0-1.1ubuntu1~ci+130419084740.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-omap-3.9_3.9.0-1.1ubuntu1--ci+130419084740
+Package-List: kernel-image-3.9.0-1-linaro-omap-di udeb debian-installer extra
+ linux-headers-3.9.0-1-linaro-omap deb devel optional
+ linux-image-3.9.0-1-linaro-omap deb kernel optional
+ linux-image-3.9.0-1-linaro-omap-dbgsym deb devel optional
+ linux-image-extra-3.9.0-1-linaro-omap deb kernel optional
+ linux-linaro-omap-3.9-headers-3.9.0-1 deb devel optional
+ linux-linaro-tools-3.9.0-1-linaro-omap deb devel optional
+Checksums-Sha1: 5597d3a3f692e1eb7d9a6edd4a46d766e318e4d8 110475255 linux-linaro-omap-3.9_3.9.0-1.1ubuntu1~ci+130419084740.tar.gz
+Checksums-Sha256: fed07b4d7c0cdb1e95dacf280c153b51ef89260c2d1f323d1676e4d9164dc4c9 110475255 linux-linaro-omap-3.9_3.9.0-1.1ubuntu1~ci+130419084740.tar.gz
+
+Package: linux-linaro-lt-vexpress-3.9
+Binary: linux-linaro-lt-vexpress-3.9-headers-3.9.0-1, linux-linaro-tools-3.9.0-1-linaro-lt-vexpress, linux-image-3.9.0-1-linaro-lt-vexpress, linux-image-extra-3.9.0-1-linaro-lt-vexpress, linux-headers-3.9.0-1-linaro-lt-vexpress, linux-image-3.9.0-1-linaro-lt-vexpress-dbgsym, kernel-image-3.9.0-1-linaro-lt-vexpress-di
+Version: 3.9.0-1.1ubuntu1~ci+130417143440
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386], bc
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-lt-vexpress-3.9
+Files:
+ 33cc2e656dc0636aab30c5d380650cb8 110275534 linux-linaro-lt-vexpress-3.9_3.9.0-1.1ubuntu1~ci+130417143440.tar.gz
+ e964a8a05a7d7d7fb2d31936bf710274 2491 linux-linaro-lt-vexpress-3.9_3.9.0-1.1ubuntu1~ci+130417143440.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-lt-vexpress-3.9_3.9.0-1.1ubuntu1--ci+130417143440
+Package-List: kernel-image-3.9.0-1-linaro-lt-vexpress-di udeb debian-installer extra
+ linux-headers-3.9.0-1-linaro-lt-vexpress deb devel optional
+ linux-image-3.9.0-1-linaro-lt-vexpress deb kernel optional
+ linux-image-3.9.0-1-linaro-lt-vexpress-dbgsym deb devel optional
+ linux-image-extra-3.9.0-1-linaro-lt-vexpress deb kernel optional
+ linux-linaro-lt-vexpress-3.9-headers-3.9.0-1 deb devel optional
+ linux-linaro-tools-3.9.0-1-linaro-lt-vexpress deb devel optional
+Checksums-Sha1: c4bfee1bf7ba74a8ae82c74ab28498377f7a8e03 110275534 linux-linaro-lt-vexpress-3.9_3.9.0-1.1ubuntu1~ci+130417143440.tar.gz
+Checksums-Sha256: 40cea84867af649dd7e8018a49be0636ca8085767d6309eea718ba0fbda28722 110275534 linux-linaro-lt-vexpress-3.9_3.9.0-1.1ubuntu1~ci+130417143440.tar.gz
+
+Package: linux-linaro-u8500-3.9
+Binary: linux-linaro-u8500-3.9-headers-3.9.0-1, linux-linaro-tools-3.9.0-1-linaro-u8500, linux-image-3.9.0-1-linaro-u8500, linux-image-extra-3.9.0-1-linaro-u8500, linux-headers-3.9.0-1-linaro-u8500, linux-image-3.9.0-1-linaro-u8500-dbgsym, kernel-image-3.9.0-1-linaro-u8500-di
+Version: 3.9.0-1.1ubuntu1~ci+130417150349
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386], bc
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-u8500-3.9
+Files:
+ f868e5a20a40dd19b04147fc0abf9d51 110477860 linux-linaro-u8500-3.9_3.9.0-1.1ubuntu1~ci+130417150349.tar.gz
+ cf97540ac2f9f413cf6e778edde9839d 2377 linux-linaro-u8500-3.9_3.9.0-1.1ubuntu1~ci+130417150349.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-u8500-3.9_3.9.0-1.1ubuntu1--ci+130417150349
+Package-List: kernel-image-3.9.0-1-linaro-u8500-di udeb debian-installer extra
+ linux-headers-3.9.0-1-linaro-u8500 deb devel optional
+ linux-image-3.9.0-1-linaro-u8500 deb kernel optional
+ linux-image-3.9.0-1-linaro-u8500-dbgsym deb devel optional
+ linux-image-extra-3.9.0-1-linaro-u8500 deb kernel optional
+ linux-linaro-tools-3.9.0-1-linaro-u8500 deb devel optional
+ linux-linaro-u8500-3.9-headers-3.9.0-1 deb devel optional
+Checksums-Sha1: 9fc5d23b2bd9e7f93a6ff9c5b7574d7d54eb8983 110477860 linux-linaro-u8500-3.9_3.9.0-1.1ubuntu1~ci+130417150349.tar.gz
+Checksums-Sha256: 38f82c23aaecf62778275b2d70b5dfc5885aec71610c619157c3e7887716d79e 110477860 linux-linaro-u8500-3.9_3.9.0-1.1ubuntu1~ci+130417150349.tar.gz
+
+Package: linux-linaro-arndale-3.9
+Binary: linux-linaro-arndale-3.9-headers-3.9.0-1, linux-linaro-tools-3.9.0-1-linaro-arndale, linux-image-3.9.0-1-linaro-arndale, linux-image-extra-3.9.0-1-linaro-arndale, linux-headers-3.9.0-1-linaro-arndale, linux-image-3.9.0-1-linaro-arndale-dbgsym, kernel-image-3.9.0-1-linaro-arndale-di
+Version: 3.9.0-1.1ubuntu1~ci+130417153317
+Section: devel
+Maintainer: Ubuntu Kernel Team <kernel-team@lists.ubuntu.com>
+Build-Depends: debhelper (>= 5), cpio, module-init-tools, kernel-wedge (>= 2.24ubuntu1), makedumpfile [amd64 i386], libelf-dev, libnewt-dev, binutils-dev, rsync, libdw-dev, dpkg (>= 1.16.0~ubuntu4), util-linux, pkg-config, flex, bison, libunwind8-dev, libaudit-dev [amd64 i386], bc
+Build-Depends-Indep: xmlto, docbook-utils, ghostscript, transfig, bzip2, sharutils, asciidoc
+Build-Conflicts: findutils (= 4.4.1-1ubuntu1)
+Architecture: armhf
+Standards-Version: 3.8.4.0
+Format: 1.0
+Directory: pool/main/l/linux-linaro-arndale-3.9
+Files:
+ ae0742e82c255f4837c374445080b4ee 110467411 linux-linaro-arndale-3.9_3.9.0-1.1ubuntu1~ci+130417153317.tar.gz
+ 01a062bee17a63372a9167a4d22233af 2415 linux-linaro-arndale-3.9_3.9.0-1.1ubuntu1~ci+130417153317.dsc
+Vcs-Git: git://github.com/jcrigby/linaro-ci-kernels.git linux-linaro-arndale-3.9_3.9.0-1.1ubuntu1--ci+130417153317
+Package-List: kernel-image-3.9.0-1-linaro-arndale-di udeb debian-installer extra
+ linux-headers-3.9.0-1-linaro-arndale deb devel optional
+ linux-image-3.9.0-1-linaro-arndale deb kernel optional
+ linux-image-3.9.0-1-linaro-arndale-dbgsym deb devel optional
+ linux-image-extra-3.9.0-1-linaro-arndale deb kernel optional
+ linux-linaro-arndale-3.9-headers-3.9.0-1 deb devel optional
+ linux-linaro-tools-3.9.0-1-linaro-arndale deb devel optional
+Checksums-Sha1: 804d670eee6471a0c9c2bd2dbe6640ab75d59aea 110467411 linux-linaro-arndale-3.9_3.9.0-1.1ubuntu1~ci+130417153317.tar.gz
+Checksums-Sha256: dd45f92bc211a2a0cf0b0124f075e21ea62c1c305b439910715666c3187edd92 110467411 linux-linaro-arndale-3.9_3.9.0-1.1ubuntu1~ci+130417153317.tar.gz
+

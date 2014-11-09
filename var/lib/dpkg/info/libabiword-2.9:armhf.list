@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libabiword-2.9.so
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libabiword-2.9
+/usr/share/doc
+/usr/share/doc/libabiword-2.9
+/usr/share/doc/libabiword-2.9/changelog.Debian.gz
+/usr/share/doc/libabiword-2.9/copyright

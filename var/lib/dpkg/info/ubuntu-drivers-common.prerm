@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/init/hybrid-gfx.conf 1:0.2.69~ -- "$@"
+# End automatically added section
+
+# Automatically added by dh_python3:
+if which py3clean >/dev/null 2>&1; then
+	py3clean -p ubuntu-drivers-common 
+fi
+
+# End automatically added section

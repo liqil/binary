@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/plymouth-label
+/usr/share/doc/plymouth-label/copyright
+/lib
+/lib/plymouth
+/lib/plymouth/label.so
+/usr/share/doc/plymouth-label/changelog.Debian.gz

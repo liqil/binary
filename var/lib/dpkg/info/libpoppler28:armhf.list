@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libpoppler.so.28.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpoppler28
+/usr/share/doc/libpoppler28/changelog.Debian.gz
+/usr/share/doc/libpoppler28/AUTHORS
+/usr/share/doc/libpoppler28/copyright
+/usr/share/doc/libpoppler28/README-XPDF.gz
+/usr/share/doc/libpoppler28/NEWS.gz
+/usr/share/doc/libpoppler28/README
+/usr/share/doc/libpoppler28/TODO
+/usr/lib/arm-linux-gnueabihf/libpoppler.so.28

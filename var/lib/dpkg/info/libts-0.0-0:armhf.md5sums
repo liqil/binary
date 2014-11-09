@@ -1,0 +1,17 @@
+55349f3beb7cceee62b738804693e285  usr/lib/arm-linux-gnueabihf/libts-0.0.so.0.1.1
+476a0e05b59e1e6b4a3c51a253abb95e  usr/lib/arm-linux-gnueabihf/ts0/arctic2.so
+f122a071b1116ec823897e716079c077  usr/lib/arm-linux-gnueabihf/ts0/collie.so
+5d071b32cd879d1c12e2569284d24f03  usr/lib/arm-linux-gnueabihf/ts0/corgi.so
+837a5eb4fea9bbf4693f903bbbf4d1c7  usr/lib/arm-linux-gnueabihf/ts0/dejitter.so
+280dc75d2848aa6cb210ec0b37e74ad7  usr/lib/arm-linux-gnueabihf/ts0/h3600.so
+4c94b459287c2d4c0b0f224f68c2ab97  usr/lib/arm-linux-gnueabihf/ts0/input.so
+044daa2f765e07a15062436ce7979cf5  usr/lib/arm-linux-gnueabihf/ts0/linear.so
+e83be7041a7b44df7986795ae8e5fef6  usr/lib/arm-linux-gnueabihf/ts0/linear_h2200.so
+2ddb7d27e65e2b7655d921147916f779  usr/lib/arm-linux-gnueabihf/ts0/mk712.so
+a177d8adf17dc00f7d468331a69abfcf  usr/lib/arm-linux-gnueabihf/ts0/pthres.so
+8dd99202be1e733f613ef545f901b6d6  usr/lib/arm-linux-gnueabihf/ts0/ucb1x00.so
+e1bf6092f1e97bb2ab4f93872d3edbf3  usr/lib/arm-linux-gnueabihf/ts0/variance.so
+8bf73aca9754fcdc72e9b548ca692cc1  usr/share/doc/libts-0.0-0/AUTHORS
+63f22c92e421c2b5e5a24c242fee884d  usr/share/doc/libts-0.0-0/README.gz
+3557067ab2495d21097f3a9c7ccf77fb  usr/share/doc/libts-0.0-0/changelog.Debian.gz
+e82889d82166d17d82bcdc95f0432be6  usr/share/doc/libts-0.0-0/copyright

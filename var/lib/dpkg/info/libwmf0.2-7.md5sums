@@ -1,0 +1,9 @@
+162f6c95dbad1b9d70249674a16a9663  usr/lib/arm-linux-gnueabihf/libwmf-0.2.so.7.1.0
+47be94b83d5f787b95756817d4ff7098  usr/lib/arm-linux-gnueabihf/libwmflite-0.2.so.7.0.1
+38f6ee674a665d58c4be2468cd36c98b  usr/share/doc/libwmf0.2-7/CREDITS
+3cb02b8d88e598259098379bb01af4cd  usr/share/doc/libwmf0.2-7/README.gz
+1f49b58ae609e39754a750dac10c5837  usr/share/doc/libwmf0.2-7/TODO
+eb533e788ec088d450e415c9f191f891  usr/share/doc/libwmf0.2-7/TODO.Debian
+b8a39292280541e4a8eb065d61a1687a  usr/share/doc/libwmf0.2-7/changelog.Debian.gz
+1fa0c3ad57891909d12fade4a1f4cc92  usr/share/doc/libwmf0.2-7/copyright
+b6df5d979e9559377b8ff6a6cc36690a  usr/share/lintian/overrides/libwmf0.2-7

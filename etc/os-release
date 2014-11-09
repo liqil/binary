@@ -1,0 +1,6 @@
+NAME="Linaro"
+VERSION="13.04"
+ID=linaro
+ID_LIKE=ubuntu
+PRETTY_NAME="Linaro 13.04"
+VERSION_ID="13.04"

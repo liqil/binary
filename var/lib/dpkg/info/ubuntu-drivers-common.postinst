@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+
+# Automatically added by dh_python3:
+if which py3compile >/dev/null 2>&1; then
+	py3compile -p ubuntu-drivers-common 
+fi
+
+if which py3compile >/dev/null 2>&1; then
+	py3compile -p ubuntu-drivers-common /usr/share/ubuntu-drivers-common -V 3.2-
+fi
+
+# End automatically added section
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper rm_conffile /etc/init/hybrid-gfx.conf 1:0.2.69~ -- "$@"
+# End automatically added section

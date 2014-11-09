@@ -1,0 +1,3 @@
+Quirks
+NvidiaDetector
+UbuntuDrivers

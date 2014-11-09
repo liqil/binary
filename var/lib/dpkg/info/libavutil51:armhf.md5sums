@@ -1,0 +1,6 @@
+e13559fdcd25ca6391b5329e24ac58e4  usr/lib/arm-linux-gnueabihf/libavutil.so.51.22.1
+5b95d87028586b4090fcaf66acc04672  usr/lib/arm-linux-gnueabihf/neon/vfp/libavutil.so.51.22.1
+812ae049e35a77fbe9da612a1284c3c5  usr/share/doc/libavutil51/README.Debian.gz
+1135c6f48a1ba04fbccd4c60e0dab0b1  usr/share/doc/libavutil51/changelog.Debian.gz
+e51de741ce5932946736d2b8ef235b80  usr/share/doc/libavutil51/copyright
+9a19ed65ae8159a28e8a2423b04121ee  usr/share/lintian/overrides/libavutil51

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>cracklib2 - a pro-active password library</title><meta name="generator" content="DocBook XSL Stylesheets V1.76.1" /><meta name="description" content="cracklib2 is a library containing a C function which may be used in a passwd (1) like program. The idea is simple: try to prevent users from choosing passwords that could be guessed by crack by filtering them out, at source. cracklib2 is not a replacement passwd (1) program. cracklib2 is a library. cracklib2 is an offshoot of version 5 of the crack software and contains a considerable number of ideas nicked from the new software. cracklib2's original home page provides some links on security publications and access to source code written by the author of cracklib2. While there is a README there is not much documentation available on cracklib2. Hopefully this page that I generated for the Debian/GNU Linux distribution will improve this situation. cracklib2 has been forked by NathanNeulinger who is now coordinating the further development. This fork has been blessed by the original maintainer in this article. The new upstream branch is hosted at the cracklib2 SourceForge project page." /></head><body><div class="article" title="cracklib2 - a pro-active password library"><div class="titlepage"><div><div><h2 class="title"><a id="idp74024"></a>cracklib2 - a pro-active password library</h2></div><div><div class="author"><h3 class="author"><span class="firstname">Jean Pierre</span> <span class="surname">LeJacq</span></h3><span class="contrib">Original Debian packaging</span> <code class="email">&lt;<a class="email" href="mailto:jplejacq@quoininc.com">jplejacq@quoininc.com</a>&gt;</code></div></div><div><div class="author"><h3 class="author"><span class="firstname">Martin</span> <span class="surname">Pitt</span></h3><span class="contrib">Debian package maintainer before version 2.8.</span> <code class="email">&lt;<a class="email" href="mailto:mpitt@debian.org">mpitt@debian.org</a>&gt;</code></div></div><div><div class="author"><h3 class="author"><span class="firstname">Jan</span> <span class="surname">Dittberner</span></h3><span class="contrib">Reformulation to DocBook XML, updated to reflect new
+      packaging and upstream version. Current Debian package
+      maintainer.</span> <code class="email">&lt;<a class="email" href="mailto:jandd@debian.org">jandd@debian.org</a>&gt;</code></div></div><div><p class="copyright">Copyright © 1998, 1999 Jean Pierre LeJacq</p></div><div><p class="copyright">Copyright © 2003 Martin Pitt</p></div><div><p class="copyright">Copyright © 2008 Jan Dittberner</p></div><div><div class="legalnotice" title="Legal Notice"><a id="idp742896"></a><p>This package and this document is free software; you may
+      redistribute it and/or modify it under the terms of the GNU
+      General Public License version 2 as published by the Free
+      Software Foundation.</p><p>A copy of the GNU General Public License version 2 is
+      available as /usr/share/common-licenses/GPL-2 in the Debian
+      GNU/Linux distribution or on the World Wide Web at <a class="ulink" href="http://www.gnu.org/copyleft/gpl.html" target="_top">http://www.gnu.org/copyleft/gpl.html</a>. You
+      can also obtain it by writing to the Free Software Foundation,
+      Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301,
+      USA.</p></div></div><div><p class="pubdate">$Date$</p></div><div><div class="abstract" title="Abstract"><p class="title"><strong>Abstract</strong></p><p><span class="application">cracklib2</span> is a library
+      containing a C function which may be used in a <a class="ulink" href="/cgi-bin/man/man2html/passwd+1" target="_top">passwd
+      (1)</a> like program. The idea is simple: try to prevent
+      users from choosing passwords that could be guessed by <a class="ulink" href="http://www.crypticide.com/alecm/security/c50-faq.html" target="_top"><span class="application"><code class="filename">crack</code></span></a>
+      by filtering them out, at
+      source. <span class="application">cracklib2</span> is
+      <span class="emphasis"><em>not</em></span> a replacement <a class="ulink" href="/cgi-bin/man/man2html/passwd+1" target="_top">passwd
+      (1)</a> program. <span class="application">cracklib2</span> is a
+      <span class="emphasis"><em>library</em></span>.</p><p><span class="application">cracklib2</span> is an offshoot of
+      version 5 of the <a class="ulink" href="http://www.crypticide.org/users/alecm/security/c50-faq.html" target="_top"><span class="application"><code class="filename">crack</code></span></a>
+      software and contains a considerable number of ideas nicked from
+      the new software.</p><p><span class="application">cracklib2</span>'s <a class="ulink" href="http://www.crypticide.org/dropsafe/about" target="_top">original home
+      page</a> provides some links on security publications and
+      access to source code written by the author of
+      <span class="application">cracklib2</span>.  While there is a <a class="ulink" href="README" target="_top">README</a> there is not much documentation
+      available on <span class="application">cracklib2</span>.  Hopefully
+      this page that I generated for the <a class="ulink" href="http://www.debian.org" target="_top">Debian/GNU Linux</a>
+      distribution will improve this situation.</p><p><span class="application">cracklib2</span> has been forked by
+      <span class="personname"><span class="firstname">Nathan</span> <span class="surname">Neulinger</span></span>
+      who is now coordinating the further development. This fork has
+      been blessed by the original maintainer in <a class="ulink" href="http://www.crypticide.com/dropsafe/article/1019" target="_top">this
+      article</a>. The new upstream branch is hosted at the <a class="ulink" href="http://sourceforge.net/projects/cracklib" target="_top"><span class="application">cracklib2</span>
+      <span class="trademark">SourceForge</span>™ project page</a>.</p></div></div></div><hr /></div><div class="toc"><p><strong>Table of Contents</strong></p><dl><dt><span class="section"><a href="#idp78840">Why <span class="application">cracklib2</span>?</a></span></dt><dt><span class="section"><a href="#idp80432">Who is responsible for all of this?</a></span></dt><dt><span class="section"><a href="#idp84160">How to use <span class="application">cracklib2</span> with
+    Debian</a></span></dt><dt><span class="section"><a href="#idp89376">Debian <span class="application">cracklib2</span> package overview</a></span></dt></dl></div><div class="section" title="Why cracklib2?"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp78840"></a>Why <span class="application">cracklib2</span>?</h2></div></div></div><p>One of the most common security weaknesses in computer
+    systems is the use of easily guessed
+    passwords. <span class="application">cracklib2</span> tries to prevent
+    the selection of weak passwords by checking potential passwords
+    against dictionaries of commonly used or easily guessed
+    words.</p></div><div class="section" title="Who is responsible for all of this?"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp80432"></a>Who is responsible for all of this?</h2></div></div></div><p><a class="ulink" href="mailto:alecm@crypticide.com" target="_top"><span class="author"><span class="firstname">Alec</span> <span class="surname">Muffet</span></span></a>
+    is the author of <span class="application">cracklib2</span>. <a class="ulink" href="mailto:jplejacq@quoininc.com" target="_top"><span class="author"><span class="firstname">Jean
+    Pierre</span> <span class="surname">LeJacq</span></span></a>
+    initially produced this Debian package, <a class="ulink" href="mailto:mpitt@debian.org" target="_top"><span class="author"><span class="firstname">Martin</span> <span class="surname">Pitt</span></span></a>
+    is its current maintainer. <a class="ulink" href="mailto:jandd@debian.org" target="_top"><span class="author"><span class="firstname">Jan</span> <span class="surname">Dittberner</span></span></a>
+    packaged the new upstream version of
+    <span class="application">cracklib2</span> and updated the
+    documentation.</p></div><div class="section" title="How to use cracklib2 with Debian"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp84160"></a>How to use <span class="application">cracklib2</span> with
+    Debian</h2></div></div></div><p>Ideally, the password quality check should be done when an
+    user sets his/her password. The PAM (Pluggable Authentication
+    Modules) architecture makes it easy to integrate arbitrary checks
+    (like <span class="application">cracklib2</span>) into programs like
+    <span class="application"><code class="filename">passwd</code></span> and
+    <span class="application"><code class="filename">ssh</code></span>.</p><p>To use <span class="application">cracklib2</span> in Debian,
+    install the package <span class="package">libpam_cracklib</span> and follow
+    the instructions to enable <span class="package">libpam_cracklib</span> in
+    <code class="filename">/etc/pam.d/common-password</code>.</p><p>From now on,<span class="application">cracklib2</span> checks the
+    password quality whenever a password is changed with
+    <span class="application"><code class="filename">passwd</code></span> and rejects
+    bad ones.</p></div><div class="section" title="Debian cracklib2 package overview"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a id="idp89376"></a>Debian <span class="application">cracklib2</span> package overview</h2></div></div></div><p>The source package is <span class="package">cracklib2</span> which
+    generates the following binary packages:</p><div class="variablelist"><dl><dt><span class="term"><span class="package">libcrack2</span></span></dt><dd><p>Shared library and this
+        documentation.</p></dd><dt><span class="term"><span class="package">libcrack2-dev</span></span></dt><dd><p>Header files, static libraries, and symbolic
+        links developers using <span class="application">cracklib2</span>
+        will need. This package also provides an example program that
+        shows the usage of <span class="application">cracklib2</span> in own
+        applications.</p></dd><dt><span class="term"><span class="package">cracklib-runtime</span></span></dt><dd><p>Run-time support programs which use the shared
+        library in <span class="package">libcrack2</span> including programs to
+        build the password dictionary databases used by the functions
+        in the shared library.</p></dd><dt><span class="term"><span class="package">python-cracklib</span></span></dt><dd><p>This package provides Python bindings for the
+        shared library in
+        <span class="package">libcrack2</span>.</p></dd></dl></div><p>This package does not include dictionaries since there are
+    already lots of them in Debian (<span class="package">wenglish</span>,
+    <span class="package">wngerman</span>, etc.).</p></div></div></body></html>

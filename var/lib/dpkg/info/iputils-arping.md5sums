@@ -1,0 +1,5 @@
+3c4c444d8886e9eeb84b5fa195e09b90  usr/bin/arping
+ac4094ef7a8b1cf6865b8f5a302a5c72  usr/share/doc/iputils-arping/RELNOTES.gz
+a8a602de53db509031baf398d996fa2b  usr/share/doc/iputils-arping/changelog.Debian.gz
+818da539220ec25a2dee658a2aec7dc1  usr/share/doc/iputils-arping/copyright
+fe22e282ecbd14024c894b92788d2bf4  usr/share/man/man8/arping.8.gz

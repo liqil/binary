@@ -1,0 +1,17 @@
+/.
+/etc
+/etc/security
+/etc/security/pwquality.conf
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabihf
+/usr/lib/arm-linux-gnueabihf/libpwquality.so.1.0.1
+/usr/share
+/usr/share/man
+/usr/share/man/man5
+/usr/share/man/man5/pwquality.conf.5.gz
+/usr/share/doc
+/usr/share/doc/libpwquality1
+/usr/share/doc/libpwquality1/changelog.Debian.gz
+/usr/share/doc/libpwquality1/copyright
+/usr/lib/arm-linux-gnueabihf/libpwquality.so.1
